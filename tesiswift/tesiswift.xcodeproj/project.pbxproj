@@ -44,6 +44,12 @@
 		EA5957BC1CAAD55800BAFEA3 /* tesiicona29x3.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957B61CAAD55800BAFEA3 /* tesiicona29x3.png */; };
 		EA5957BD1CAAD55800BAFEA3 /* tesiicona40x2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957B71CAAD55800BAFEA3 /* tesiicona40x2.png */; };
 		EA5957BE1CAAD55800BAFEA3 /* tesiicona29x2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957B81CAAD55800BAFEA3 /* tesiicona29x2.png */; };
+		EA5957C01CAAEB3300BAFEA3 /* slide.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957BF1CAAEB3300BAFEA3 /* slide.png */; };
+		EA5957C21CAAEE5300BAFEA3 /* basso.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957C11CAAEE5300BAFEA3 /* basso.png */; };
+		EA5957C51CAAEF9100BAFEA3 /* automatic.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957C31CAAEF9100BAFEA3 /* automatic.png */; };
+		EA5957C61CAAEF9100BAFEA3 /* manual.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957C41CAAEF9100BAFEA3 /* manual.png */; };
+		EA5957C81CAAF8C900BAFEA3 /* giallo.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957C71CAAF8C900BAFEA3 /* giallo.png */; };
+		EA5957CA1CAAFA2200BAFEA3 /* pianta.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957C91CAAFA2200BAFEA3 /* pianta.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +125,12 @@
 		EA5957B61CAAD55800BAFEA3 /* tesiicona29x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesiicona29x3.png; sourceTree = "<group>"; };
 		EA5957B71CAAD55800BAFEA3 /* tesiicona40x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesiicona40x2.png; sourceTree = "<group>"; };
 		EA5957B81CAAD55800BAFEA3 /* tesiicona29x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesiicona29x2.png; sourceTree = "<group>"; };
+		EA5957BF1CAAEB3300BAFEA3 /* slide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slide.png; sourceTree = "<group>"; };
+		EA5957C11CAAEE5300BAFEA3 /* basso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = basso.png; sourceTree = "<group>"; };
+		EA5957C31CAAEF9100BAFEA3 /* automatic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = automatic.png; sourceTree = "<group>"; };
+		EA5957C41CAAEF9100BAFEA3 /* manual.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = manual.png; sourceTree = "<group>"; };
+		EA5957C71CAAF8C900BAFEA3 /* giallo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = giallo.png; sourceTree = "<group>"; };
+		EA5957C91CAAFA2200BAFEA3 /* pianta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pianta.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +188,6 @@
 				EA067A2C1C9EB65E00CD426B /* AppDelegate.swift */,
 				EA067A2E1C9EB65E00CD426B /* ViewController.swift */,
 				EA067A301C9EB65E00CD426B /* Main.storyboard */,
-				EA067A331C9EB65E00CD426B /* icona3.png */,
 				EA067A351C9EB65E00CD426B /* LaunchScreen.storyboard */,
 				EA067A381C9EB65E00CD426B /* Info.plist */,
 				EA067A631C9F1D4500CD426B /* BlynkClient.swift */,
@@ -215,11 +226,18 @@
 		EA5957781CAABFAB00BAFEA3 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				EA5957C11CAAEE5300BAFEA3 /* basso.png */,
+				EA5957BF1CAAEB3300BAFEA3 /* slide.png */,
+				EA067A331C9EB65E00CD426B /* icona3.png */,
 				EA5957891CAAC6F200BAFEA3 /* Auto off2x.png */,
 				EA59578A1CAAC6F200BAFEA3 /* Auto on2x.png */,
 				EA59578B1CAAC6F200BAFEA3 /* Auto press2x.png */,
+				EA5957C31CAAEF9100BAFEA3 /* automatic.png */,
+				EA5957C41CAAEF9100BAFEA3 /* manual.png */,
 				EA5957B11CAAD3BC00BAFEA3 /* tesiicona.png */,
 				EA59578C1CAAC6F200BAFEA3 /* Manual off2x.png */,
+				EA5957C71CAAF8C900BAFEA3 /* giallo.png */,
+				EA5957C91CAAFA2200BAFEA3 /* pianta.png */,
 				EA5957B31CAAD55800BAFEA3 /* tesiicona60x3.png */,
 				EA5957B41CAAD55800BAFEA3 /* tesiicona40x3.png */,
 				EA5957B51CAAD55800BAFEA3 /* tesiicona60x2.png */,
@@ -354,6 +372,7 @@
 				EA5957A51CAACCFF00BAFEA3 /* Uppress.png in Resources */,
 				EA5957AE1CAAD2E100BAFEA3 /* Images.xcassets in Resources */,
 				EA5957BA1CAAD55800BAFEA3 /* tesiicona40x3.png in Resources */,
+				EA5957C81CAAF8C900BAFEA3 /* giallo.png in Resources */,
 				EA5957A71CAACCFF00BAFEA3 /* Upfcpress.png in Resources */,
 				EA5957B91CAAD55800BAFEA3 /* tesiicona60x3.png in Resources */,
 				EA067A371C9EB65E00CD426B /* LaunchScreen.storyboard in Resources */,
@@ -362,7 +381,9 @@
 				EA5957941CAAC6F200BAFEA3 /* Manual press2x.png in Resources */,
 				EA5957881CAAC5E500BAFEA3 /* top2x.png in Resources */,
 				EA5957B21CAAD3BC00BAFEA3 /* tesiicona.png in Resources */,
+				EA5957CA1CAAFA2200BAFEA3 /* pianta.png in Resources */,
 				EA59579E1CAACCAC00BAFEA3 /* Up.png in Resources */,
+				EA5957C21CAAEE5300BAFEA3 /* basso.png in Resources */,
 				EA59578F1CAAC6F200BAFEA3 /* Auto off2x.png in Resources */,
 				EA5957BC1CAAD55800BAFEA3 /* tesiicona29x3.png in Resources */,
 				EA5957BD1CAAD55800BAFEA3 /* tesiicona40x2.png in Resources */,
@@ -374,8 +395,11 @@
 				EA5957921CAAC6F200BAFEA3 /* Manual off2x.png in Resources */,
 				EA59579D1CAACCAC00BAFEA3 /* Down.png in Resources */,
 				EA59579F1CAACCAC00BAFEA3 /* Upfc.png in Resources */,
+				EA5957C01CAAEB3300BAFEA3 /* slide.png in Resources */,
 				EA5957A81CAACCFF00BAFEA3 /* Downfcpress.png in Resources */,
 				EA5957BE1CAAD55800BAFEA3 /* tesiicona29x2.png in Resources */,
+				EA5957C61CAAEF9100BAFEA3 /* manual.png in Resources */,
+				EA5957C51CAAEF9100BAFEA3 /* automatic.png in Resources */,
 				EA5957981CAACB4000BAFEA3 /* bedroom.png in Resources */,
 				EA5957A01CAACCAC00BAFEA3 /* Downfc.png in Resources */,
 				EA067A321C9EB65E00CD426B /* Main.storyboard in Resources */,
