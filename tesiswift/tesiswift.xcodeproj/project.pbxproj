@@ -10,7 +10,7 @@
 		EA067A2D1C9EB65E00CD426B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067A2C1C9EB65E00CD426B /* AppDelegate.swift */; };
 		EA067A2F1C9EB65E00CD426B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067A2E1C9EB65E00CD426B /* ViewController.swift */; };
 		EA067A321C9EB65E00CD426B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA067A301C9EB65E00CD426B /* Main.storyboard */; };
-		EA067A341C9EB65E00CD426B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA067A331C9EB65E00CD426B /* Assets.xcassets */; };
+		EA067A341C9EB65E00CD426B /* icona3.png in Resources */ = {isa = PBXBuildFile; fileRef = EA067A331C9EB65E00CD426B /* icona3.png */; };
 		EA067A371C9EB65E00CD426B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA067A351C9EB65E00CD426B /* LaunchScreen.storyboard */; };
 		EA067A421C9EB65E00CD426B /* tesiswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067A411C9EB65E00CD426B /* tesiswiftTests.swift */; };
 		EA067A4D1C9EB65E00CD426B /* tesiswiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067A4C1C9EB65E00CD426B /* tesiswiftUITests.swift */; };
@@ -19,6 +19,31 @@
 		EA067A611C9F0C6800CD426B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA067A5E1C9F0B5800CD426B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA067A641C9F1D4500CD426B /* BlynkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067A631C9F1D4500CD426B /* BlynkClient.swift */; };
 		EA067A661C9F290B00CD426B /* PeriodicReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067A651C9F290B00CD426B /* PeriodicReader.swift */; };
+		EA5957881CAAC5E500BAFEA3 /* top2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957871CAAC5E500BAFEA3 /* top2x.png */; };
+		EA59578F1CAAC6F200BAFEA3 /* Auto off2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957891CAAC6F200BAFEA3 /* Auto off2x.png */; };
+		EA5957901CAAC6F200BAFEA3 /* Auto on2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA59578A1CAAC6F200BAFEA3 /* Auto on2x.png */; };
+		EA5957911CAAC6F200BAFEA3 /* Auto press2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA59578B1CAAC6F200BAFEA3 /* Auto press2x.png */; };
+		EA5957921CAAC6F200BAFEA3 /* Manual off2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA59578C1CAAC6F200BAFEA3 /* Manual off2x.png */; };
+		EA5957931CAAC6F200BAFEA3 /* Manual on2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA59578D1CAAC6F200BAFEA3 /* Manual on2x.png */; };
+		EA5957941CAAC6F200BAFEA3 /* Manual press2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA59578E1CAAC6F200BAFEA3 /* Manual press2x.png */; };
+		EA5957961CAAC97D00BAFEA3 /* Livingroom.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957951CAAC97D00BAFEA3 /* Livingroom.png */; };
+		EA5957981CAACB4000BAFEA3 /* bedroom.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957971CAACB4000BAFEA3 /* bedroom.png */; };
+		EA59579D1CAACCAC00BAFEA3 /* Down.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957991CAACCAC00BAFEA3 /* Down.png */; };
+		EA59579E1CAACCAC00BAFEA3 /* Up.png in Resources */ = {isa = PBXBuildFile; fileRef = EA59579A1CAACCAC00BAFEA3 /* Up.png */; };
+		EA59579F1CAACCAC00BAFEA3 /* Upfc.png in Resources */ = {isa = PBXBuildFile; fileRef = EA59579B1CAACCAC00BAFEA3 /* Upfc.png */; };
+		EA5957A01CAACCAC00BAFEA3 /* Downfc.png in Resources */ = {isa = PBXBuildFile; fileRef = EA59579C1CAACCAC00BAFEA3 /* Downfc.png */; };
+		EA5957A51CAACCFF00BAFEA3 /* Uppress.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957A11CAACCFF00BAFEA3 /* Uppress.png */; };
+		EA5957A61CAACCFF00BAFEA3 /* Downpress.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957A21CAACCFF00BAFEA3 /* Downpress.png */; };
+		EA5957A71CAACCFF00BAFEA3 /* Upfcpress.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957A31CAACCFF00BAFEA3 /* Upfcpress.png */; };
+		EA5957A81CAACCFF00BAFEA3 /* Downfcpress.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957A41CAACCFF00BAFEA3 /* Downfcpress.png */; };
+		EA5957AE1CAAD2E100BAFEA3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5957AD1CAAD2E100BAFEA3 /* Images.xcassets */; };
+		EA5957B21CAAD3BC00BAFEA3 /* tesiicona.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957B11CAAD3BC00BAFEA3 /* tesiicona.png */; };
+		EA5957B91CAAD55800BAFEA3 /* tesiicona60x3.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957B31CAAD55800BAFEA3 /* tesiicona60x3.png */; };
+		EA5957BA1CAAD55800BAFEA3 /* tesiicona40x3.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957B41CAAD55800BAFEA3 /* tesiicona40x3.png */; };
+		EA5957BB1CAAD55800BAFEA3 /* tesiicona60x2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957B51CAAD55800BAFEA3 /* tesiicona60x2.png */; };
+		EA5957BC1CAAD55800BAFEA3 /* tesiicona29x3.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957B61CAAD55800BAFEA3 /* tesiicona29x3.png */; };
+		EA5957BD1CAAD55800BAFEA3 /* tesiicona40x2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957B71CAAD55800BAFEA3 /* tesiicona40x2.png */; };
+		EA5957BE1CAAD55800BAFEA3 /* tesiicona29x2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957B81CAAD55800BAFEA3 /* tesiicona29x2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +82,7 @@
 		EA067A2C1C9EB65E00CD426B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA067A2E1C9EB65E00CD426B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA067A311C9EB65E00CD426B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EA067A331C9EB65E00CD426B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA067A331C9EB65E00CD426B /* icona3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icona3.png; path = "/Users/anto/Desktop/tenda git/tesiswift/tesiswift/icona3.png"; sourceTree = "<absolute>"; };
 		EA067A361C9EB65E00CD426B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA067A381C9EB65E00CD426B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA067A3D1C9EB65E00CD426B /* tesiswiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tesiswiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +94,31 @@
 		EA067A5E1C9F0B5800CD426B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		EA067A631C9F1D4500CD426B /* BlynkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlynkClient.swift; sourceTree = "<group>"; };
 		EA067A651C9F290B00CD426B /* PeriodicReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicReader.swift; sourceTree = "<group>"; };
+		EA5957871CAAC5E500BAFEA3 /* top2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top2x.png; sourceTree = "<group>"; };
+		EA5957891CAAC6F200BAFEA3 /* Auto off2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Auto off2x.png"; sourceTree = "<group>"; };
+		EA59578A1CAAC6F200BAFEA3 /* Auto on2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Auto on2x.png"; sourceTree = "<group>"; };
+		EA59578B1CAAC6F200BAFEA3 /* Auto press2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Auto press2x.png"; sourceTree = "<group>"; };
+		EA59578C1CAAC6F200BAFEA3 /* Manual off2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Manual off2x.png"; sourceTree = "<group>"; };
+		EA59578D1CAAC6F200BAFEA3 /* Manual on2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Manual on2x.png"; sourceTree = "<group>"; };
+		EA59578E1CAAC6F200BAFEA3 /* Manual press2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Manual press2x.png"; sourceTree = "<group>"; };
+		EA5957951CAAC97D00BAFEA3 /* Livingroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Livingroom.png; sourceTree = "<group>"; };
+		EA5957971CAACB4000BAFEA3 /* bedroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bedroom.png; sourceTree = "<group>"; };
+		EA5957991CAACCAC00BAFEA3 /* Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Down.png; sourceTree = "<group>"; };
+		EA59579A1CAACCAC00BAFEA3 /* Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Up.png; sourceTree = "<group>"; };
+		EA59579B1CAACCAC00BAFEA3 /* Upfc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Upfc.png; sourceTree = "<group>"; };
+		EA59579C1CAACCAC00BAFEA3 /* Downfc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Downfc.png; sourceTree = "<group>"; };
+		EA5957A11CAACCFF00BAFEA3 /* Uppress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Uppress.png; sourceTree = "<group>"; };
+		EA5957A21CAACCFF00BAFEA3 /* Downpress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Downpress.png; sourceTree = "<group>"; };
+		EA5957A31CAACCFF00BAFEA3 /* Upfcpress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Upfcpress.png; sourceTree = "<group>"; };
+		EA5957A41CAACCFF00BAFEA3 /* Downfcpress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Downfcpress.png; sourceTree = "<group>"; };
+		EA5957AD1CAAD2E100BAFEA3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA5957B11CAAD3BC00BAFEA3 /* tesiicona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesiicona.png; sourceTree = "<group>"; };
+		EA5957B31CAAD55800BAFEA3 /* tesiicona60x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesiicona60x3.png; sourceTree = "<group>"; };
+		EA5957B41CAAD55800BAFEA3 /* tesiicona40x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesiicona40x3.png; sourceTree = "<group>"; };
+		EA5957B51CAAD55800BAFEA3 /* tesiicona60x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesiicona60x2.png; sourceTree = "<group>"; };
+		EA5957B61CAAD55800BAFEA3 /* tesiicona29x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesiicona29x3.png; sourceTree = "<group>"; };
+		EA5957B71CAAD55800BAFEA3 /* tesiicona40x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesiicona40x2.png; sourceTree = "<group>"; };
+		EA5957B81CAAD55800BAFEA3 /* tesiicona29x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tesiicona29x2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,14 +172,16 @@
 		EA067A2B1C9EB65E00CD426B /* tesiswift */ = {
 			isa = PBXGroup;
 			children = (
+				EA5957771CAABF9A00BAFEA3 /* supporting files */,
 				EA067A2C1C9EB65E00CD426B /* AppDelegate.swift */,
 				EA067A2E1C9EB65E00CD426B /* ViewController.swift */,
 				EA067A301C9EB65E00CD426B /* Main.storyboard */,
-				EA067A331C9EB65E00CD426B /* Assets.xcassets */,
+				EA067A331C9EB65E00CD426B /* icona3.png */,
 				EA067A351C9EB65E00CD426B /* LaunchScreen.storyboard */,
 				EA067A381C9EB65E00CD426B /* Info.plist */,
 				EA067A631C9F1D4500CD426B /* BlynkClient.swift */,
 				EA067A651C9F290B00CD426B /* PeriodicReader.swift */,
+				EA5957AD1CAAD2E100BAFEA3 /* Images.xcassets */,
 			);
 			path = tesiswift;
 			sourceTree = "<group>";
@@ -150,6 +202,45 @@
 				EA067A4E1C9EB65E00CD426B /* Info.plist */,
 			);
 			path = tesiswiftUITests;
+			sourceTree = "<group>";
+		};
+		EA5957771CAABF9A00BAFEA3 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				EA5957781CAABFAB00BAFEA3 /* Graphics */,
+			);
+			name = "supporting files";
+			sourceTree = "<group>";
+		};
+		EA5957781CAABFAB00BAFEA3 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				EA5957891CAAC6F200BAFEA3 /* Auto off2x.png */,
+				EA59578A1CAAC6F200BAFEA3 /* Auto on2x.png */,
+				EA59578B1CAAC6F200BAFEA3 /* Auto press2x.png */,
+				EA5957B11CAAD3BC00BAFEA3 /* tesiicona.png */,
+				EA59578C1CAAC6F200BAFEA3 /* Manual off2x.png */,
+				EA5957B31CAAD55800BAFEA3 /* tesiicona60x3.png */,
+				EA5957B41CAAD55800BAFEA3 /* tesiicona40x3.png */,
+				EA5957B51CAAD55800BAFEA3 /* tesiicona60x2.png */,
+				EA5957B61CAAD55800BAFEA3 /* tesiicona29x3.png */,
+				EA5957B71CAAD55800BAFEA3 /* tesiicona40x2.png */,
+				EA5957B81CAAD55800BAFEA3 /* tesiicona29x2.png */,
+				EA5957991CAACCAC00BAFEA3 /* Down.png */,
+				EA5957A11CAACCFF00BAFEA3 /* Uppress.png */,
+				EA5957A21CAACCFF00BAFEA3 /* Downpress.png */,
+				EA5957A31CAACCFF00BAFEA3 /* Upfcpress.png */,
+				EA5957A41CAACCFF00BAFEA3 /* Downfcpress.png */,
+				EA59579A1CAACCAC00BAFEA3 /* Up.png */,
+				EA59579B1CAACCAC00BAFEA3 /* Upfc.png */,
+				EA59579C1CAACCAC00BAFEA3 /* Downfc.png */,
+				EA5957951CAAC97D00BAFEA3 /* Livingroom.png */,
+				EA5957971CAACB4000BAFEA3 /* bedroom.png */,
+				EA59578D1CAAC6F200BAFEA3 /* Manual on2x.png */,
+				EA59578E1CAAC6F200BAFEA3 /* Manual press2x.png */,
+				EA5957871CAAC5E500BAFEA3 /* top2x.png */,
+			);
+			name = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +351,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5957A51CAACCFF00BAFEA3 /* Uppress.png in Resources */,
+				EA5957AE1CAAD2E100BAFEA3 /* Images.xcassets in Resources */,
+				EA5957BA1CAAD55800BAFEA3 /* tesiicona40x3.png in Resources */,
+				EA5957A71CAACCFF00BAFEA3 /* Upfcpress.png in Resources */,
+				EA5957B91CAAD55800BAFEA3 /* tesiicona60x3.png in Resources */,
 				EA067A371C9EB65E00CD426B /* LaunchScreen.storyboard in Resources */,
-				EA067A341C9EB65E00CD426B /* Assets.xcassets in Resources */,
+				EA067A341C9EB65E00CD426B /* icona3.png in Resources */,
+				EA5957BB1CAAD55800BAFEA3 /* tesiicona60x2.png in Resources */,
+				EA5957941CAAC6F200BAFEA3 /* Manual press2x.png in Resources */,
+				EA5957881CAAC5E500BAFEA3 /* top2x.png in Resources */,
+				EA5957B21CAAD3BC00BAFEA3 /* tesiicona.png in Resources */,
+				EA59579E1CAACCAC00BAFEA3 /* Up.png in Resources */,
+				EA59578F1CAAC6F200BAFEA3 /* Auto off2x.png in Resources */,
+				EA5957BC1CAAD55800BAFEA3 /* tesiicona29x3.png in Resources */,
+				EA5957BD1CAAD55800BAFEA3 /* tesiicona40x2.png in Resources */,
+				EA5957A61CAACCFF00BAFEA3 /* Downpress.png in Resources */,
+				EA5957931CAAC6F200BAFEA3 /* Manual on2x.png in Resources */,
+				EA5957911CAAC6F200BAFEA3 /* Auto press2x.png in Resources */,
+				EA5957901CAAC6F200BAFEA3 /* Auto on2x.png in Resources */,
+				EA5957961CAAC97D00BAFEA3 /* Livingroom.png in Resources */,
+				EA5957921CAAC6F200BAFEA3 /* Manual off2x.png in Resources */,
+				EA59579D1CAACCAC00BAFEA3 /* Down.png in Resources */,
+				EA59579F1CAACCAC00BAFEA3 /* Upfc.png in Resources */,
+				EA5957A81CAACCFF00BAFEA3 /* Downfcpress.png in Resources */,
+				EA5957BE1CAAD55800BAFEA3 /* tesiicona29x2.png in Resources */,
+				EA5957981CAACB4000BAFEA3 /* bedroom.png in Resources */,
+				EA5957A01CAACCAC00BAFEA3 /* Downfc.png in Resources */,
 				EA067A321C9EB65E00CD426B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -446,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -525,6 +643,7 @@
 				EA067A531C9EB65E00CD426B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA067A541C9EB65E00CD426B /* Build configuration list for PBXNativeTarget "tesiswiftTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +652,7 @@
 				EA067A561C9EB65E00CD426B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA067A571C9EB65E00CD426B /* Build configuration list for PBXNativeTarget "tesiswiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +661,7 @@
 				EA067A591C9EB65E00CD426B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

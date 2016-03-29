@@ -17,111 +17,112 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jy7-gG-QjW">
-                                <rect key="frame" x="309" y="72" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="cFF-Ai-70M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jy7-gG-QjW">
+                                <rect key="frame" x="193" y="137" width="170" height="31"/>
+                                <state key="normal" image="Manual off2x.png"/>
+                                <state key="selected" image="Manual on2x.png"/>
+                                <state key="highlighted" image="Manual press2x.png"/>
+                                <state key="focused" image="Manual press2x.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1G-pJ-MNF">
-                                <rect key="frame" x="20" y="73" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1G-pJ-MNF">
+                                <rect key="frame" x="14" y="137" width="171" height="31"/>
+                                <state key="normal" image="Auto off2x.png"/>
+                                <state key="selected" image="Auto on2x.png"/>
+                                <state key="highlighted" image="Auto press2x.png"/>
+                                <state key="focused" image="Auto press.png"/>
                                 <connections>
                                     <action selector="request:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QrE-K5-hlz"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68b-v6-G1R">
-                                <rect key="frame" x="163" y="72" width="51" height="31"/>
-                            </switch>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="mid-Vz-jac">
-                                <rect key="frame" x="18" y="163" width="339" height="31"/>
-                                <connections>
-                                    <action selector="changeBrightness:" destination="BYZ-38-t0r" eventType="valueChanged" id="ei7-P7-BMR"/>
-                                </connections>
-                            </slider>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5eJ-A0-dt1">
-                                <rect key="frame" x="112" y="281" width="150" height="2.5"/>
-                            </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LTf-OT-Ujv">
-                                <rect key="frame" x="112" y="344" width="150" height="2.5"/>
-                            </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="interna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cD-lZ-bbZ">
-                                <rect key="frame" x="160" y="252" width="54" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="esterna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zN-Af-v19">
-                                <rect key="frame" x="158" y="315" width="58" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="quanta luce vuoi?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmC-gV-gMc">
-                                <rect key="frame" x="120" y="141" width="134" height="21"/>
+                                <rect key="frame" x="140" y="449" width="54" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gh-SP-h6s">
-                                <rect key="frame" x="94" y="455" width="22" height="21"/>
+                                <rect key="frame" x="94" y="580" width="22" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvR-2G-qaG">
-                                <rect key="frame" x="259" y="455" width="23" height="21"/>
+                                <rect key="frame" x="259" y="580" width="23" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnQ-nd-nsf">
-                                <rect key="frame" x="259" y="478" width="30" height="21"/>
+                                <rect key="frame" x="259" y="603" width="30" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lM-cp-gzy">
-                                <rect key="frame" x="94" y="477" width="30" height="21"/>
+                                <rect key="frame" x="94" y="602" width="30" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D6 (255)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLZ-Cc-yNJ">
-                                <rect key="frame" x="152" y="488" width="69" height="21"/>
+                                <rect key="frame" x="152" y="613" width="69" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peb-QO-7Lg">
-                                <rect key="frame" x="140" y="450" width="39" height="30"/>
-                                <state key="normal" title="Down"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D11 (255)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mh-Sl-vvi">
+                                <rect key="frame" x="149" y="637" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="mid-Vz-jac">
+                                <rect key="frame" x="16" y="554" width="339" height="31"/>
+                                <connections>
+                                    <action selector="changeBrightness:" destination="BYZ-38-t0r" eventType="valueChanged" id="ei7-P7-BMR"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Livingroom.png" translatesAutoresizingMaskIntoConstraints="NO" id="IT3-0X-xvZ">
+                                <rect key="frame" x="-24" y="176" width="454" height="115"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bedroom.png" translatesAutoresizingMaskIntoConstraints="NO" id="SFT-n2-3d7">
+                                <rect key="frame" x="-27" y="249" width="457" height="220"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW6-ad-qcm">
+                                <rect key="frame" x="35" y="425" width="19" height="23"/>
+                                <state key="normal" image="Upfc.png"/>
+                                <state key="highlighted" image="Upfcpress.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peb-QO-7Lg">
+                                <rect key="frame" x="130" y="427" width="23" height="19"/>
+                                <state key="normal" image="Down.png"/>
+                                <state key="highlighted" image="Downpress.png"/>
                                 <connections>
                                     <action selector="tendaDown:" destination="BYZ-38-t0r" eventType="touchDown" id="hqc-9L-9q3"/>
                                     <action selector="tendaDownOver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hvb-xA-9mG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDw-MP-wDa">
-                                <rect key="frame" x="207" y="450" width="30" height="30"/>
-                                <state key="normal" title="Up"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDw-MP-wDa">
+                                <rect key="frame" x="222" y="427" width="23" height="19"/>
+                                <state key="normal" image="Up.png"/>
+                                <state key="highlighted" image="Uppress.png"/>
                                 <connections>
                                     <action selector="tendaUp:" destination="BYZ-38-t0r" eventType="touchDown" id="HQS-wO-Bhg"/>
                                     <action selector="tendaUpOver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E4H-BU-kJK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D11 (255)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mh-Sl-vvi">
-                                <rect key="frame" x="149" y="512" width="73" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tenda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6q-KY-8g9">
-                                <rect key="frame" x="165" y="421" width="44" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrH-re-wCm">
+                                <rect key="frame" x="319" y="425" width="19" height="23"/>
+                                <state key="normal" image="Downfc.png"/>
+                                <state key="highlighted" image="Downfcpress.png"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="internaLight" destination="8bC-Xf-vdC" id="muu-Tf-9o9"/>
@@ -133,4 +134,24 @@
             <point key="canvasLocation" x="299.5" y="478.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Auto off2x.png" width="332" height="62"/>
+        <image name="Auto on2x.png" width="332" height="62"/>
+        <image name="Auto press.png" width="166" height="31"/>
+        <image name="Auto press2x.png" width="332" height="62"/>
+        <image name="Down.png" width="46" height="38"/>
+        <image name="Downfc.png" width="38" height="46"/>
+        <image name="Downfcpress.png" width="38" height="46"/>
+        <image name="Downpress.png" width="46" height="38"/>
+        <image name="Livingroom.png" width="906" height="230"/>
+        <image name="Manual off2x.png" width="332" height="62"/>
+        <image name="Manual on2x.png" width="332" height="62"/>
+        <image name="Manual press2x.png" width="332" height="62"/>
+        <image name="Up.png" width="46" height="38"/>
+        <image name="Upfc.png" width="38" height="46"/>
+        <image name="Upfcpress.png" width="38" height="46"/>
+        <image name="Uppress.png" width="46" height="38"/>
+        <image name="bedroom.png" width="914" height="440"/>
+        <image name="top2x.png" width="750" height="368"/>
+    </resources>
 </document>
