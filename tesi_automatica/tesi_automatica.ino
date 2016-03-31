@@ -122,7 +122,7 @@ bool moving(int luce, int target) {
 }
 
 bool speed(int luce, int target) {
-    return luce - target;
+    return abs(luce - target);
 }
 
 void logic() {
