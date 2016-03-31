@@ -34,6 +34,8 @@
 // Set ESP8266 Serial object
 #define EspSerial Serial
 
+#define MARGIN 5
+
 ESP8266 wifi(EspSerial);
 
 // You should get Auth Token in the Blynk App.
@@ -44,29 +46,34 @@ int fotoInt=A0;
 int fotoEst=A1;
 int luceInt=0;
 int luceEst=0;
+int luceTarget=0;
+bool started=false;
 
-
-void setup() 
-{
+void setup() {
   // Set console baud rate
   Serial.begin(9600);
   delay(10);
   // Set ESP8266 baud rate
   EspSerial.begin(115200);
   delay(10);
-
   Blynk.begin(auth, wifi, "TP-LINK_2.4GHz_8653F3", "18031986");
+  
+  pinMode(fotoEst, INPUT);
+  pinMode(fotoInt, INPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(2, INPUT);
+  Serial.begin(9600);
+}
 
- pinMode(fotoEst, INPUT);
- pinMode(fotoInt, INPUT);
- pinMode(7, OUTPUT);
- pinMode(8, OUTPUT);
- pinMode(9, OUTPUT);
- pinMode(13, OUTPUT);
- pinMode(12, OUTPUT);
- pinMode(11, OUTPUT);
- pinMode(2, INPUT);
- Serial.begin(9600);
+BLYNK_WRITE(V3) {
+  BLYNK_LOG("Received new V3: %s", param.asStr());
+  started=true;
+  luceTarget=param.asInt();
 }
 
 bool fineCorsaUp() {
@@ -77,55 +84,67 @@ bool fineCorsaDown() {
   return digitalRead(3) != LOW;
 }
 
-bool tendaUpA() {
-   digitalWrite(6,255) ; digitalWrite(7,HIGH) ; digitalWrite(8,LOW);
+bool tendaUpA(int s) {
+   digitalWrite(6,s); 
+   digitalWrite(7,HIGH); 
+   digitalWrite(8,LOW);
 }
 
-bool tendaUpB() {
-   digitalWrite(13,255) ; digitalWrite(11,HIGH) ; digitalWrite(12,LOW);
+bool tendaUpB(int s) {
+   digitalWrite(13,s); 
+   digitalWrite(11,HIGH); 
+   digitalWrite(12,LOW);
 }
 
-bool tendaDownA() {
-   digitalWrite(6,255) ; digitalWrite(7,LOW) ; digitalWrite(8,HIGH);
+bool tendaDownA(int s) {
+   digitalWrite(6,s); 
+   digitalWrite(7,LOW); 
+   digitalWrite(8,HIGH);
 }
 
-bool tendaDownB() {
-   digitalWrite(13,255) ; digitalWrite(11,LOW) ; digitalWrite(12,HIGH);
+bool tendaDownB(int s) {
+   digitalWrite(13,s); 
+   digitalWrite(11,LOW); 
+   digitalWrite(12,HIGH);
 }
 
-
-void loop() 
-{
+void loop() {
   Blynk.run();
   logic();
 }
 
-void logic()
-{
-    luceInt=analogRead(fotoInt);
-    luceEst=analogRead(fotoEst);
-    int fineCorsaU = digitalRead(2);
-    int fineCorsaD = digitalRead(3);
-    
+bool directionUp(int luce, int target) {
+    return luce < target;
+}
 
+bool moving(int luce, int target) {
+    return abs(luce - target) > MARGIN;
+}
 
-    
-    if (luce>100 && !fineCorsaUp()){
+bool speed(int luce, int target) {
+    return luce - target;
+}
+
+void logic() {
+  luceInt=analogRead(fotoInt);
+  luceEst=analogRead(fotoEst);
+  int fineCorsaU = digitalRead(2);
+  int fineCorsaD = digitalRead(3);
+  
+  if (moving(luceInt, luceTarget)) {
+   if (directionUp(luceInt, luceTarget)){
+      tendaUpA(speed(luceInt, luceTarget));
+      tendaUpB(speed(luceInt, luceTarget));
+    } else {
+      tendaDownA(speed(luceInt, luceTarget));
+      tendaDownB(speed(luceInt, luceTarget));
     }
-    
-    if (luce<100 && !fineCorsaDown()){
-    }
-
-    if (luce>100){
-    } 
-
-    if (luce<100){
-    } 
-     
-    Serial.print(luceInt);
-    Serial.print(luceEst);
-    Serial.print("/t");
-    Serial.println(fineCorsaU, DEC);
-    Serial.println(fineCorsaD, DEC);  
-    delay(10);
+  }
+   
+  Serial.print(luceInt);
+  Serial.print(luceEst);
+  Serial.print("/t");
+  Serial.println(fineCorsaU, DEC);
+  Serial.println(fineCorsaD, DEC);  
+  delay(10);
 }
