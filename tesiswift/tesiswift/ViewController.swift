@@ -1,5 +1,4 @@
 import Alamofire
-
 import UIKit
 
 class ViewController: UIViewController {
