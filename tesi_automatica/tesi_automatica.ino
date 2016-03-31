@@ -37,6 +37,7 @@ void setup() {
   pinMode(12, OUTPUT);
   pinMode(11, OUTPUT);
   pinMode(2, INPUT);
+  pinMode(3, INPUT);
   Blynk.begin(auth, wifi, "TP-LINK_2.4GHz_8653F3", "18031986");
 }
 
