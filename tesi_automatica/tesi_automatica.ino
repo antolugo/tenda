@@ -140,11 +140,11 @@ void logic() {
       tendaDownB(speed(luceInt, luceTarget));
     }
   }
-   
-  Serial.print(luceInt);
-  Serial.print(luceEst);
-  Serial.print("/t");
-  Serial.println(fineCorsaU, DEC);
-  Serial.println(fineCorsaD, DEC);  
+
+  BLYNK_LOG("Luce interna: %d",luceInt);
+  BLYNK_LOG("Luce esterna: %d",luceEst);
+  BLYNK_LOG("Fine corsa Up: %d",fineCorsaU);
+  BLYNK_LOG("Fine corsa Down: %d",fineCorsaD);
+  
   delay(10);
 }
