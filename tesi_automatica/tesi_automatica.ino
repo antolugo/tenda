@@ -6,7 +6,7 @@
 // Set ESP8266 Serial object
 #define EspSerial Serial
 
-#define MARGIN 5
+#define MARGIN 15
 
 ESP8266 wifi(EspSerial);
 
@@ -30,9 +30,9 @@ void setup() {
   delay(10);
   pinMode(fotoEst, INPUT);
   pinMode(fotoInt, INPUT);
+  pinMode(6, OUTPUT);
   pinMode(7, OUTPUT);
   pinMode(8, OUTPUT);
-  pinMode(9, OUTPUT);
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode(11, OUTPUT);
@@ -78,9 +78,18 @@ bool tendaDownB(int s) {
    digitalWrite(12,HIGH);
 }
 
+void stopAll() {
+  digitalWrite(13,0); 
+  digitalWrite(6,0); 
+}
+
 void loop() {
   Blynk.run();
-  logic();
+  lastMillis = millis()
+  if (500 < (millis()-lastMillis)) {
+    lastMillis = millis();
+    logic();
+  }
 }
 
 bool directionUp(int luce, int target) {
@@ -92,7 +101,12 @@ bool moving(int luce, int target) {
 }
 
 bool speed(int luce, int target) {
-    return abs(luce - target);
+  int diff = abs(luce - target);
+    if (diff < 255) {
+      return diff;
+    } else {
+      return 255;
+    }
 }
 
 void logic() {
@@ -108,7 +122,9 @@ void logic() {
     } else {
       tendaDownA(speed(luceInt, luceTarget));
       tendaDownB(speed(luceInt, luceTarget));
-    }
+    } 
+  } else (stopAll()) {
+    
   }
 
   BLYNK_LOG("Luce interna: %d",luceInt);
