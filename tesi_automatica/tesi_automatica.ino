@@ -131,7 +131,7 @@ void logic() {
   int fineCorsaU = digitalRead(2);
   int fineCorsaD = digitalRead(3);
   
-  if (moving(luceInt, luceTarget)) {
+  if (started && moving(luceInt, luceTarget)) {
    if (directionUp(luceInt, luceTarget)){
       tendaUpA(speed(luceInt, luceTarget));
       tendaUpB(speed(luceInt, luceTarget));
