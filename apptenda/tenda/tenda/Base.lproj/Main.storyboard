@@ -73,14 +73,6 @@
                                             <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="juM-x2-xDJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5l-Fk-VBv" userLabel="Slidebar Btn Sx Red">
-                                        <rect key="frame" x="304" y="0.0" width="28" height="96"/>
-                                        <state key="normal" image="freccia r sx.png"/>
-                                        <state key="selected" image="freccia r sx.png"/>
-                                        <connections>
-                                            <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqe-4e-y6W"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-pm-ce4" userLabel="Slidebar Btn Dx  Green">
                                         <rect key="frame" x="304" y="0.0" width="28" height="96"/>
                                         <state key="normal" image="freccia v dx.png"/>
@@ -88,6 +80,15 @@
                                         <connections>
                                             <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hla-iW-jLd"/>
                                             <action selector="onSlidebarBtnDx:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5si-Vn-uap"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5l-Fk-VBv" userLabel="Slidebar Btn Sx Red">
+                                        <rect key="frame" x="304" y="0.0" width="28" height="96"/>
+                                        <state key="normal" image="freccia r sx.png"/>
+                                        <state key="selected" image="freccia r sx.png"/>
+                                        <connections>
+                                            <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqe-4e-y6W"/>
+                                            <action selector="onSlidebarBtnSxRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lri-3X-xx2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmn-JM-7YB">
@@ -164,10 +165,10 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="AutomaticValue" destination="UN8-TH-v4S" id="czn-vz-BX4"/>
-                        <outlet property="SlidebarBtn" destination="K7G-99-eCW" id="Iwc-YX-pxL"/>
-                        <outlet property="SlidebarBtnDxRed" destination="Zmn-JM-7YB" id="Nf7-35-NXe"/>
-                        <outlet property="SlidebarBtnGrDx" destination="ivK-pm-ce4" id="wlK-4m-6xm"/>
-                        <outlet property="SlidebarBtnSxRed" destination="a5l-Fk-VBv" id="lBj-33-eOp"/>
+                        <outlet property="DxGr" destination="ivK-pm-ce4" id="v0R-fo-UVa"/>
+                        <outlet property="DxRed" destination="Zmn-JM-7YB" id="rcc-iX-65z"/>
+                        <outlet property="SxGr" destination="K7G-99-eCW" id="ubY-L1-55U"/>
+                        <outlet property="SxRed" destination="a5l-Fk-VBv" id="o7B-wG-JM3"/>
                         <outlet property="automaticBtn" destination="s5J-29-sMM" id="KwG-a9-Xuq"/>
                         <outlet property="automaticGreen" destination="UM3-vI-QLu" id="hYe-5m-bbl"/>
                         <outlet property="automaticSlider" destination="kZj-p7-tZj" id="QVd-Vy-TKo"/>

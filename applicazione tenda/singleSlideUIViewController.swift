@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class singleSlideUIViewController: UIViewController {
    
     @IBOutlet weak var closedSlidebar: UIView!
@@ -17,16 +16,23 @@ class singleSlideUIViewController: UIViewController {
     @IBOutlet weak var manualBtn: UIButton!
     
     @IBOutlet weak var redBar: UIImageView!
-    @IBOutlet weak var SlidebarBtnDxRed: UIButton!
-    @IBOutlet weak var SlidebarBtnSxRed: UIButton!
     
     @IBOutlet weak var greenBar: UIImageView!
-    @IBOutlet weak var SlidebarBtn: UIButton!
-    @IBOutlet weak var SlidebarBtnGrDx: UIButton!
+
     @IBOutlet weak var automaticSlider: UISlider!
     @IBOutlet weak var AutomaticValue: UILabel!
     @IBOutlet weak var automaticGreen: UIView!
     
+    
+    
+    var manual = false
+    
+    func activate(manual:boolean) {
+        self.SlidebarBtn.alpha = (manual ? 100 : 0)
+        self.SlidebarBtnSxRed.alpha = (manual ? 0 : 100)
+        self.SlidebarBtnGrDx.alpha = (manual ? 100 : 0)
+        self.SlidebarBtnDxRed.alpha = (manual ? 0 : 100)
+    }
 
     @IBAction func onAutomaticBtn(sender: AnyObject) {
         UIView.animateWithDuration(0.3) {
@@ -37,6 +43,8 @@ class singleSlideUIViewController: UIViewController {
             self.manualBtn.alpha = 100
 
             self.automaticGreen.alpha = 0
+            
+            manual = true
             
         }
         
@@ -50,6 +58,8 @@ class singleSlideUIViewController: UIViewController {
             self.manualBtn.alpha = 0
 
             self.automaticGreen.alpha = 100
+
+            manual = false
         }
         
     }
@@ -62,7 +72,9 @@ class singleSlideUIViewController: UIViewController {
             self.SlidebarBtn.alpha = 0
             self.SlidebarBtnGrDx.alpha = 100
             self.SlidebarBtnDxRed.alpha = 0
-            }, completion: nil)
+            }, completion: { activate(manual)
+                }
+                )
     }
 
     @IBAction func onSlidebarBtnDx(sender: AnyObject) {

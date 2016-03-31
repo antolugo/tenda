@@ -8,26 +8,37 @@
 
 import UIKit
 
-
 class singleSlideUIViewController: UIViewController {
-   
+    
     @IBOutlet weak var closedSlidebar: UIView!
     
     @IBOutlet weak var automaticBtn: UIButton!
     @IBOutlet weak var manualBtn: UIButton!
     
     @IBOutlet weak var redBar: UIImageView!
-    @IBOutlet weak var SlidebarBtnDxRed: UIButton!
-    @IBOutlet weak var SlidebarBtnSxRed: UIButton!
     
     @IBOutlet weak var greenBar: UIImageView!
-    @IBOutlet weak var SlidebarBtn: UIButton!
-    @IBOutlet weak var SlidebarBtnGrDx: UIButton!
+    
     @IBOutlet weak var automaticSlider: UISlider!
     @IBOutlet weak var AutomaticValue: UILabel!
     @IBOutlet weak var automaticGreen: UIView!
     
-
+    @IBOutlet weak var SxGr: UIButton!
+    @IBOutlet weak var DxGr: UIButton!
+    @IBOutlet weak var SxRed: UIButton!
+    @IBOutlet weak var DxRed: UIButton!
+    
+    
+    var manual = false
+    var left = false
+    
+    func activate(manual:Bool,left:Bool) {
+        self.SxGr.alpha = !left ? (!manual ? 100 : 0) : 0
+        self.SxRed.alpha = !left ? (!manual ? 0 : 100) : 0
+        self.DxGr.alpha = left ? (!manual ? 100 : 0) : 0
+        self.DxRed.alpha = left ? (!manual ? 0 : 100) : 0
+    }
+    
     @IBAction func onAutomaticBtn(sender: AnyObject) {
         UIView.animateWithDuration(0.3) {
             self.greenBar.alpha = 0
@@ -35,8 +46,12 @@ class singleSlideUIViewController: UIViewController {
             
             self.automaticBtn.alpha = 0
             self.manualBtn.alpha = 100
-
+            
             self.automaticGreen.alpha = 0
+            
+            self.manual = true
+            self.activate(self.manual,left: self.left)
+            
             
         }
         
@@ -48,41 +63,55 @@ class singleSlideUIViewController: UIViewController {
             
             self.automaticBtn.alpha = 100
             self.manualBtn.alpha = 0
-
+            
             self.automaticGreen.alpha = 100
-        }
+            
+            self.manual = false
+            self.activate(self.manual,left: self.left)
         
+       }
     }
-
+    
     
     
     @IBAction func onSlidebarBtn(sender: AnyObject) {
-        UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: { 
+        UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
             self.closedSlidebar.frame.origin.x = -262
-            self.SlidebarBtn.alpha = 0
-            self.SlidebarBtnGrDx.alpha = 100
-            self.SlidebarBtnDxRed.alpha = 0
-            }, completion: nil)
+            self.left = true
+            self.activate(self.manual,left: self.left)
+            }, completion:nil
+        )
     }
-
+    
+    @IBAction func onSlidebarBtnSxRed(sender: AnyObject) {
+        UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            self.closedSlidebar.frame.origin.x = -262
+            self.left = true
+            self.activate(self.manual,left: self.left)
+            }, completion:nil)
+    }
+    
     @IBAction func onSlidebarBtnDx(sender: AnyObject) {
         UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
             self.closedSlidebar.frame.origin.x = 44
-            self.SlidebarBtn.alpha = 100
-            self.SlidebarBtnGrDx.alpha = 0
+            self.left = false
+            self.activate(self.manual,left: self.left)
             }, completion: nil)
         
     }
     
-
+    
     @IBAction func onSlidebarBtnDxRed(sender: AnyObject) {
         UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
             self.closedSlidebar.frame.origin.x = 44
-            self.SlidebarBtn.alpha = 100
-            self.SlidebarBtnGrDx.alpha = 0
+            self.left = false
+            self.activate(self.manual,left: self.left)
             }, completion: nil)
     }
     
+
+
     
     
 }
+
