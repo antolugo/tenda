@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA33DB581CAD0749004B7408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33DB571CAD0749004B7408 /* AppDelegate.swift */; };
+		EA33DB5A1CAD0749004B7408 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33DB591CAD0749004B7408 /* ViewController.swift */; };
+		EA33DB5D1CAD0749004B7408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB5B1CAD0749004B7408 /* Main.storyboard */; };
+		EA33DB5F1CAD0749004B7408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB5E1CAD0749004B7408 /* Assets.xcassets */; };
+		EA33DB621CAD0749004B7408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB601CAD0749004B7408 /* LaunchScreen.storyboard */; };
+		EA33DB6D1CAD0749004B7408 /* tendaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33DB6C1CAD0749004B7408 /* tendaTests.swift */; };
+		EA33DB781CAD0749004B7408 /* tendaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA33DB771CAD0749004B7408 /* tendaUITests.swift */; };
+		EA33DB871CAD0A6E004B7408 /* parte fissa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB861CAD0A6E004B7408 /* parte fissa@2x.png */; };
+		EA33DB8B1CAD0E0E004B7408 /* a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB881CAD0E0E004B7408 /* a@2x.png */; };
+		EA33DB8C1CAD0E0E004B7408 /* m@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB891CAD0E0E004B7408 /* m@2x.png */; };
+		EA33DB8D1CAD0E0E004B7408 /* m:a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB8A1CAD0E0E004B7408 /* m:a@2x.png */; };
+		EA33DB921CAD102B004B7408 /* verde@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB8E1CAD102B004B7408 /* verde@2x.png */; };
+		EA33DB931CAD102B004B7408 /* rosso@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB8F1CAD102B004B7408 /* rosso@2x.png */; };
+		EA33DB941CAD102B004B7408 /* freccia verde aperta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB901CAD102B004B7408 /* freccia verde aperta@2x.png */; };
+		EA33DB951CAD102B004B7408 /* freccia rossa aperta@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB911CAD102B004B7408 /* freccia rossa aperta@2x.png */; };
+		EA33DB9B1CAD120F004B7408 /* freccia v sx@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB961CAD120F004B7408 /* freccia v sx@2x.png */; };
+		EA33DB9C1CAD120F004B7408 /* freccia v dx@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB971CAD120F004B7408 /* freccia v dx@2x.png */; };
+		EA33DB9D1CAD120F004B7408 /* freccia r sx@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB981CAD120F004B7408 /* freccia r sx@2x.png */; };
+		EA33DB9E1CAD120F004B7408 /* freccia r dx@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB991CAD120F004B7408 /* freccia r dx@2x.png */; };
+		EA33DB9F1CAD120F004B7408 /* chiuso@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA33DB9A1CAD120F004B7408 /* chiuso@2x.png */; };
+		EA4A15991CAD16E0006ABFA5 /* singleSlideUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A15981CAD16E0006ABFA5 /* singleSlideUIViewController.swift */; };
+		EA4A159C1CAD59F4006ABFA5 /* romborosso@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4A159A1CAD59F4006ABFA5 /* romborosso@2x.png */; };
+		EA4A159D1CAD59F4006ABFA5 /* romborverde@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4A159B1CAD59F4006ABFA5 /* romborverde@2x.png */; };
+		EA4A15A21CADAFA1006ABFA5 /* fcdown.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4A159E1CADAFA1006ABFA5 /* fcdown.png */; };
+		EA4A15A31CADAFA1006ABFA5 /* fcup.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4A159F1CADAFA1006ABFA5 /* fcup.png */; };
+		EA4A15A41CADAFA1006ABFA5 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4A15A01CADAFA1006ABFA5 /* up.png */; };
+		EA4A15A51CADAFA1006ABFA5 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4A15A11CADAFA1006ABFA5 /* down.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA33DB691CAD0749004B7408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA33DB4C1CAD0749004B7408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA33DB531CAD0749004B7408;
+			remoteInfo = tenda;
+		};
+		EA33DB741CAD0749004B7408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA33DB4C1CAD0749004B7408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA33DB531CAD0749004B7408;
+			remoteInfo = tenda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA33DB541CAD0749004B7408 /* tenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA33DB571CAD0749004B7408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA33DB591CAD0749004B7408 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA33DB5C1CAD0749004B7408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA33DB5E1CAD0749004B7408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA33DB611CAD0749004B7408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA33DB631CAD0749004B7408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA33DB681CAD0749004B7408 /* tendaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tendaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA33DB6C1CAD0749004B7408 /* tendaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tendaTests.swift; sourceTree = "<group>"; };
+		EA33DB6E1CAD0749004B7408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA33DB731CAD0749004B7408 /* tendaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tendaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA33DB771CAD0749004B7408 /* tendaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tendaUITests.swift; sourceTree = "<group>"; };
+		EA33DB791CAD0749004B7408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA33DB861CAD0A6E004B7408 /* parte fissa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parte fissa@2x.png"; sourceTree = "<group>"; };
+		EA33DB881CAD0E0E004B7408 /* a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a@2x.png"; sourceTree = "<group>"; };
+		EA33DB891CAD0E0E004B7408 /* m@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m@2x.png"; sourceTree = "<group>"; };
+		EA33DB8A1CAD0E0E004B7408 /* m:a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m:a@2x.png"; sourceTree = "<group>"; };
+		EA33DB8E1CAD102B004B7408 /* verde@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "verde@2x.png"; sourceTree = "<group>"; };
+		EA33DB8F1CAD102B004B7408 /* rosso@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rosso@2x.png"; sourceTree = "<group>"; };
+		EA33DB901CAD102B004B7408 /* freccia verde aperta@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "freccia verde aperta@2x.png"; sourceTree = "<group>"; };
+		EA33DB911CAD102B004B7408 /* freccia rossa aperta@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "freccia rossa aperta@2x.png"; sourceTree = "<group>"; };
+		EA33DB961CAD120F004B7408 /* freccia v sx@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "freccia v sx@2x.png"; sourceTree = "<group>"; };
+		EA33DB971CAD120F004B7408 /* freccia v dx@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "freccia v dx@2x.png"; sourceTree = "<group>"; };
+		EA33DB981CAD120F004B7408 /* freccia r sx@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "freccia r sx@2x.png"; sourceTree = "<group>"; };
+		EA33DB991CAD120F004B7408 /* freccia r dx@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "freccia r dx@2x.png"; sourceTree = "<group>"; };
+		EA33DB9A1CAD120F004B7408 /* chiuso@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chiuso@2x.png"; sourceTree = "<group>"; };
+		EA4A15981CAD16E0006ABFA5 /* singleSlideUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = singleSlideUIViewController.swift; path = ../../singleSlideUIViewController.swift; sourceTree = "<group>"; };
+		EA4A159A1CAD59F4006ABFA5 /* romborosso@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "romborosso@2x.png"; sourceTree = "<group>"; };
+		EA4A159B1CAD59F4006ABFA5 /* romborverde@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "romborverde@2x.png"; sourceTree = "<group>"; };
+		EA4A159E1CADAFA1006ABFA5 /* fcdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fcdown.png; sourceTree = "<group>"; };
+		EA4A159F1CADAFA1006ABFA5 /* fcup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fcup.png; sourceTree = "<group>"; };
+		EA4A15A01CADAFA1006ABFA5 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		EA4A15A11CADAFA1006ABFA5 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA33DB511CAD0749004B7408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA33DB651CAD0749004B7408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA33DB701CAD0749004B7408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA33DB4B1CAD0749004B7408 = {
+			isa = PBXGroup;
+			children = (
+				EA33DB561CAD0749004B7408 /* tenda */,
+				EA33DB6B1CAD0749004B7408 /* tendaTests */,
+				EA33DB761CAD0749004B7408 /* tendaUITests */,
+				EA33DB551CAD0749004B7408 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA33DB551CAD0749004B7408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA33DB541CAD0749004B7408 /* tenda.app */,
+				EA33DB681CAD0749004B7408 /* tendaTests.xctest */,
+				EA33DB731CAD0749004B7408 /* tendaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA33DB561CAD0749004B7408 /* tenda */ = {
+			isa = PBXGroup;
+			children = (
+				EA33DB851CAD09FA004B7408 /* images */,
+				EA33DB571CAD0749004B7408 /* AppDelegate.swift */,
+				EA33DB591CAD0749004B7408 /* ViewController.swift */,
+				EA33DB5B1CAD0749004B7408 /* Main.storyboard */,
+				EA4A15981CAD16E0006ABFA5 /* singleSlideUIViewController.swift */,
+				EA33DB5E1CAD0749004B7408 /* Assets.xcassets */,
+				EA33DB601CAD0749004B7408 /* LaunchScreen.storyboard */,
+				EA33DB631CAD0749004B7408 /* Info.plist */,
+			);
+			path = tenda;
+			sourceTree = "<group>";
+		};
+		EA33DB6B1CAD0749004B7408 /* tendaTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA33DB6C1CAD0749004B7408 /* tendaTests.swift */,
+				EA33DB6E1CAD0749004B7408 /* Info.plist */,
+			);
+			path = tendaTests;
+			sourceTree = "<group>";
+		};
+		EA33DB761CAD0749004B7408 /* tendaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA33DB771CAD0749004B7408 /* tendaUITests.swift */,
+				EA33DB791CAD0749004B7408 /* Info.plist */,
+			);
+			path = tendaUITests;
+			sourceTree = "<group>";
+		};
+		EA33DB851CAD09FA004B7408 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EA33DB861CAD0A6E004B7408 /* parte fissa@2x.png */,
+				EA33DB881CAD0E0E004B7408 /* a@2x.png */,
+				EA33DB8E1CAD102B004B7408 /* verde@2x.png */,
+				EA33DB8F1CAD102B004B7408 /* rosso@2x.png */,
+				EA33DB901CAD102B004B7408 /* freccia verde aperta@2x.png */,
+				EA33DB911CAD102B004B7408 /* freccia rossa aperta@2x.png */,
+				EA4A159A1CAD59F4006ABFA5 /* romborosso@2x.png */,
+				EA4A159E1CADAFA1006ABFA5 /* fcdown.png */,
+				EA4A159F1CADAFA1006ABFA5 /* fcup.png */,
+				EA4A15A01CADAFA1006ABFA5 /* up.png */,
+				EA4A15A11CADAFA1006ABFA5 /* down.png */,
+				EA4A159B1CAD59F4006ABFA5 /* romborverde@2x.png */,
+				EA33DB891CAD0E0E004B7408 /* m@2x.png */,
+				EA33DB961CAD120F004B7408 /* freccia v sx@2x.png */,
+				EA33DB971CAD120F004B7408 /* freccia v dx@2x.png */,
+				EA33DB981CAD120F004B7408 /* freccia r sx@2x.png */,
+				EA33DB991CAD120F004B7408 /* freccia r dx@2x.png */,
+				EA33DB9A1CAD120F004B7408 /* chiuso@2x.png */,
+				EA33DB8A1CAD0E0E004B7408 /* m:a@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA33DB531CAD0749004B7408 /* tenda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA33DB7C1CAD0749004B7408 /* Build configuration list for PBXNativeTarget "tenda" */;
+			buildPhases = (
+				EA33DB501CAD0749004B7408 /* Sources */,
+				EA33DB511CAD0749004B7408 /* Frameworks */,
+				EA33DB521CAD0749004B7408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tenda;
+			productName = tenda;
+			productReference = EA33DB541CAD0749004B7408 /* tenda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA33DB671CAD0749004B7408 /* tendaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA33DB7F1CAD0749004B7408 /* Build configuration list for PBXNativeTarget "tendaTests" */;
+			buildPhases = (
+				EA33DB641CAD0749004B7408 /* Sources */,
+				EA33DB651CAD0749004B7408 /* Frameworks */,
+				EA33DB661CAD0749004B7408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA33DB6A1CAD0749004B7408 /* PBXTargetDependency */,
+			);
+			name = tendaTests;
+			productName = tendaTests;
+			productReference = EA33DB681CAD0749004B7408 /* tendaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA33DB721CAD0749004B7408 /* tendaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA33DB821CAD0749004B7408 /* Build configuration list for PBXNativeTarget "tendaUITests" */;
+			buildPhases = (
+				EA33DB6F1CAD0749004B7408 /* Sources */,
+				EA33DB701CAD0749004B7408 /* Frameworks */,
+				EA33DB711CAD0749004B7408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA33DB751CAD0749004B7408 /* PBXTargetDependency */,
+			);
+			name = tendaUITests;
+			productName = tendaUITests;
+			productReference = EA33DB731CAD0749004B7408 /* tendaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA33DB4C1CAD0749004B7408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Anto;
+				TargetAttributes = {
+					EA33DB531CAD0749004B7408 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3Y42H37B42;
+					};
+					EA33DB671CAD0749004B7408 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3Y42H37B42;
+						TestTargetID = EA33DB531CAD0749004B7408;
+					};
+					EA33DB721CAD0749004B7408 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 3Y42H37B42;
+						TestTargetID = EA33DB531CAD0749004B7408;
+					};
+				};
+			};
+			buildConfigurationList = EA33DB4F1CAD0749004B7408 /* Build configuration list for PBXProject "tenda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA33DB4B1CAD0749004B7408;
+			productRefGroup = EA33DB551CAD0749004B7408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA33DB531CAD0749004B7408 /* tenda */,
+				EA33DB671CAD0749004B7408 /* tendaTests */,
+				EA33DB721CAD0749004B7408 /* tendaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA33DB521CAD0749004B7408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4A15A51CADAFA1006ABFA5 /* down.png in Resources */,
+				EA4A15A41CADAFA1006ABFA5 /* up.png in Resources */,
+				EA33DB941CAD102B004B7408 /* freccia verde aperta@2x.png in Resources */,
+				EA33DB9C1CAD120F004B7408 /* freccia v dx@2x.png in Resources */,
+				EA33DB9D1CAD120F004B7408 /* freccia r sx@2x.png in Resources */,
+				EA33DB621CAD0749004B7408 /* LaunchScreen.storyboard in Resources */,
+				EA33DB9B1CAD120F004B7408 /* freccia v sx@2x.png in Resources */,
+				EA4A15A31CADAFA1006ABFA5 /* fcup.png in Resources */,
+				EA33DB9F1CAD120F004B7408 /* chiuso@2x.png in Resources */,
+				EA33DB8B1CAD0E0E004B7408 /* a@2x.png in Resources */,
+				EA4A15A21CADAFA1006ABFA5 /* fcdown.png in Resources */,
+				EA33DB8C1CAD0E0E004B7408 /* m@2x.png in Resources */,
+				EA33DB9E1CAD120F004B7408 /* freccia r dx@2x.png in Resources */,
+				EA33DB871CAD0A6E004B7408 /* parte fissa@2x.png in Resources */,
+				EA4A159C1CAD59F4006ABFA5 /* romborosso@2x.png in Resources */,
+				EA33DB5F1CAD0749004B7408 /* Assets.xcassets in Resources */,
+				EA33DB8D1CAD0E0E004B7408 /* m:a@2x.png in Resources */,
+				EA33DB931CAD102B004B7408 /* rosso@2x.png in Resources */,
+				EA4A159D1CAD59F4006ABFA5 /* romborverde@2x.png in Resources */,
+				EA33DB5D1CAD0749004B7408 /* Main.storyboard in Resources */,
+				EA33DB951CAD102B004B7408 /* freccia rossa aperta@2x.png in Resources */,
+				EA33DB921CAD102B004B7408 /* verde@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA33DB661CAD0749004B7408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA33DB711CAD0749004B7408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA33DB501CAD0749004B7408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4A15991CAD16E0006ABFA5 /* singleSlideUIViewController.swift in Sources */,
+				EA33DB5A1CAD0749004B7408 /* ViewController.swift in Sources */,
+				EA33DB581CAD0749004B7408 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA33DB641CAD0749004B7408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA33DB6D1CAD0749004B7408 /* tendaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA33DB6F1CAD0749004B7408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA33DB781CAD0749004B7408 /* tendaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA33DB6A1CAD0749004B7408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA33DB531CAD0749004B7408 /* tenda */;
+			targetProxy = EA33DB691CAD0749004B7408 /* PBXContainerItemProxy */;
+		};
+		EA33DB751CAD0749004B7408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA33DB531CAD0749004B7408 /* tenda */;
+			targetProxy = EA33DB741CAD0749004B7408 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA33DB5B1CAD0749004B7408 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA33DB5C1CAD0749004B7408 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA33DB601CAD0749004B7408 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA33DB611CAD0749004B7408 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA33DB7A1CAD0749004B7408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA33DB7B1CAD0749004B7408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA33DB7D1CAD0749004B7408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = tenda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anto.tenda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA33DB7E1CAD0749004B7408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = tenda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anto.tenda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EA33DB801CAD0749004B7408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = tendaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anto.tendaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tenda.app/tenda";
+			};
+			name = Debug;
+		};
+		EA33DB811CAD0749004B7408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = tendaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anto.tendaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tenda.app/tenda";
+			};
+			name = Release;
+		};
+		EA33DB831CAD0749004B7408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = tendaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anto.tendaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = tenda;
+			};
+			name = Debug;
+		};
+		EA33DB841CAD0749004B7408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = tendaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Anto.tendaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = tenda;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA33DB4F1CAD0749004B7408 /* Build configuration list for PBXProject "tenda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA33DB7A1CAD0749004B7408 /* Debug */,
+				EA33DB7B1CAD0749004B7408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA33DB7C1CAD0749004B7408 /* Build configuration list for PBXNativeTarget "tenda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA33DB7D1CAD0749004B7408 /* Debug */,
+				EA33DB7E1CAD0749004B7408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA33DB7F1CAD0749004B7408 /* Build configuration list for PBXNativeTarget "tendaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA33DB801CAD0749004B7408 /* Debug */,
+				EA33DB811CAD0749004B7408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA33DB821CAD0749004B7408 /* Build configuration list for PBXNativeTarget "tendaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA33DB831CAD0749004B7408 /* Debug */,
+				EA33DB841CAD0749004B7408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA33DB4C1CAD0749004B7408 /* Project object */;
+}
