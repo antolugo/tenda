@@ -56,9 +56,7 @@ void setup()
   delay(10);
 
   Blynk.begin(auth, wifi, "TP-LINK_2.4GHz_8653F3", "18031986");
-}
 
-{
  pinMode(fotoEst, INPUT);
  pinMode(fotoInt, INPUT);
  pinMode(7, OUTPUT);
@@ -68,7 +66,7 @@ void setup()
  pinMode(12, OUTPUT);
  pinMode(11, OUTPUT);
  pinMode(2, INPUT);
-  Serial.begin(9600);
+ Serial.begin(9600);
 }
 
 bool fineCorsaUp() {
@@ -80,27 +78,29 @@ bool fineCorsaDown() {
 }
 
 bool tendaUpA() {
-  return digitalWrite(6) != 255 && digitalWrite(7) != HIGH && digitalWrite(8) != LOW;
+   digitalWrite(6,255) ; digitalWrite(7,HIGH) ; digitalWrite(8,LOW);
 }
 
 bool tendaUpB() {
-  return digitalWrite(13) != 255 && digitalWrite(11) != HIGH && digitalWrite(12) != LOW;
+   digitalWrite(13,255) ; digitalWrite(11,HIGH) ; digitalWrite(12,LOW);
 }
 
 bool tendaDownA() {
-  return digitalWrite(6) != 255 && digitalWrite(7) != LOW && digitalWrite(8) != HIGH;
+   digitalWrite(6,255) ; digitalWrite(7,LOW) ; digitalWrite(8,HIGH);
 }
 
 bool tendaDownB() {
-  return digitalWrite(13) != 255 && digitalWrite(11) != LOW && digitalWrite(12) != HIGH;
+   digitalWrite(13,255) ; digitalWrite(11,LOW) ; digitalWrite(12,HIGH);
 }
 
 
 void loop() 
 {
   Blynk.run();
+  logic();
 }
 
+void logic()
 {
     luceInt=analogRead(fotoInt);
     luceEst=analogRead(fotoEst);
