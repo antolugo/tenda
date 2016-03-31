@@ -28,8 +28,6 @@ void setup() {
   // Set ESP8266 baud rate
   EspSerial.begin(115200);
   delay(10);
-  Blynk.begin(auth, wifi, "TP-LINK_2.4GHz_8653F3", "18031986");
-  
   pinMode(fotoEst, INPUT);
   pinMode(fotoInt, INPUT);
   pinMode(7, OUTPUT);
@@ -39,7 +37,7 @@ void setup() {
   pinMode(12, OUTPUT);
   pinMode(11, OUTPUT);
   pinMode(2, INPUT);
-  Serial.begin(9600);
+  Blynk.begin(auth, wifi, "TP-LINK_2.4GHz_8653F3", "18031986");
 }
 
 BLYNK_WRITE(V3) {
