@@ -36,7 +36,6 @@ class singleSlideUIViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var percGr: UILabel!
     
     
-    
     var manual = false
     var left = false
     
@@ -109,7 +108,7 @@ class singleSlideUIViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onSlidebarBtn(sender: AnyObject) {
         UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
-            self.closedSlidebar.frame.origin.x = -262
+            self.closedSlidebar.frame.origin.x = -254
             self.left = true
             self.activate(self.manual,left: self.left)
             }, completion:nil
@@ -118,7 +117,7 @@ class singleSlideUIViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onSlidebarBtnSxRed(sender: AnyObject) {
         UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
-            self.closedSlidebar.frame.origin.x = -262
+            self.closedSlidebar.frame.origin.x = -254
             self.left = true
             self.activate(self.manual,left: self.left)
             }, completion:nil)

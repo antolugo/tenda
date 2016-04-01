@@ -23,26 +23,26 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VhO-QN-jVm">
                                 <rect key="frame" x="-2" y="91" width="378" height="578"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fS-c5-bTS">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fS-c5-bTS" userLabel="Manual Red">
                                         <rect key="frame" x="46" y="0.0" width="332" height="96"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rosso.png" translatesAutoresizingMaskIntoConstraints="NO" id="hNs-YQ-J3v">
                                                 <rect key="frame" x="0.0" y="0.0" width="331" height="96"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEc-YR-C06">
-                                                <rect key="frame" x="59" y="36" width="24" height="24"/>
+                                                <rect key="frame" x="65" y="36" width="24" height="24"/>
                                                 <state key="normal" image="fcdown.png"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYx-Xg-6te">
-                                                <rect key="frame" x="134" y="38" width="24" height="20"/>
+                                                <rect key="frame" x="132" y="37" width="30" height="25"/>
                                                 <state key="normal" image="down.png"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSc-aR-36E">
-                                                <rect key="frame" x="274" y="36" width="24" height="24"/>
+                                                <rect key="frame" x="282" y="36" width="24" height="24"/>
                                                 <state key="normal" image="fcup.png"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHg-Pp-y2F">
-                                                <rect key="frame" x="204" y="38" width="24" height="20"/>
+                                                <rect key="frame" x="204" y="36" width="30" height="25"/>
                                                 <state key="normal" image="up.png"/>
                                             </button>
                                         </subviews>
