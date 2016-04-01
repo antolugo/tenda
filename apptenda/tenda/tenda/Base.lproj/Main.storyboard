@@ -17,147 +17,161 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fS-c5-bTS">
-                                <rect key="frame" x="44" y="91" width="332" height="96"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rosso.png" translatesAutoresizingMaskIntoConstraints="NO" id="hNs-YQ-J3v">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="96"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEc-YR-C06">
-                                        <rect key="frame" x="59" y="36" width="24" height="24"/>
-                                        <state key="normal" image="fcdown.png"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYx-Xg-6te">
-                                        <rect key="frame" x="134" y="38" width="24" height="20"/>
-                                        <state key="normal" image="down.png"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSc-aR-36E">
-                                        <rect key="frame" x="274" y="36" width="24" height="24"/>
-                                        <state key="normal" image="fcup.png"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHg-Pp-y2F">
-                                        <rect key="frame" x="204" y="38" width="24" height="20"/>
-                                        <state key="normal" image="up.png"/>
-                                    </button>
-                                </subviews>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UM3-vI-QLu">
-                                <rect key="frame" x="44" y="91" width="331" height="96"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="verde.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lpy-32-Pea">
-                                        <rect key="frame" x="-1" y="0.0" width="332" height="96"/>
-                                    </imageView>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kZj-p7-tZj">
-                                        <rect key="frame" x="36" y="33" width="194" height="31"/>
-                                        <color key="tintColor" red="0.32156862745098042" green="0.33725490196078434" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
-                                    </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN8-TH-v4S">
-                                        <rect key="frame" x="246" y="0.0" width="60" height="96"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                        <color key="textColor" red="0.22352941176470589" green="0.23137254901960785" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Avg-Uf-WDJ" userLabel="ClosedSlidebar">
-                                <rect key="frame" x="44" y="91" width="332" height="97"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chiuso.png" translatesAutoresizingMaskIntoConstraints="NO" id="yeM-bc-Gmb">
-                                        <rect key="frame" x="-1" y="0.0" width="334" height="96"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7G-99-eCW" userLabel="Slidebar Btn Sx Green">
-                                        <rect key="frame" x="304" y="0.0" width="28" height="96"/>
-                                        <state key="normal" image="freccia v sx.png"/>
-                                        <state key="selected" image="freccia v dx.png"/>
-                                        <connections>
-                                            <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="juM-x2-xDJ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-pm-ce4" userLabel="Slidebar Btn Dx  Green">
-                                        <rect key="frame" x="304" y="0.0" width="28" height="96"/>
-                                        <state key="normal" image="freccia v dx.png"/>
-                                        <state key="selected" image="freccia v dx.png"/>
-                                        <connections>
-                                            <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hla-iW-jLd"/>
-                                            <action selector="onSlidebarBtnDx:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5si-Vn-uap"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5l-Fk-VBv" userLabel="Slidebar Btn Sx Red">
-                                        <rect key="frame" x="304" y="0.0" width="28" height="96"/>
-                                        <state key="normal" image="freccia r sx.png"/>
-                                        <state key="selected" image="freccia r sx.png"/>
-                                        <connections>
-                                            <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqe-4e-y6W"/>
-                                            <action selector="onSlidebarBtnSxRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lri-3X-xx2"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmn-JM-7YB">
-                                        <rect key="frame" x="304" y="1" width="28" height="96"/>
-                                        <state key="normal" image="freccia r dx.png"/>
-                                        <state key="selected" image="freccia v dx.png"/>
-                                        <connections>
-                                            <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lB2-Df-gTM"/>
-                                            <action selector="onSlidebarBtnDx:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYK-2o-ZKC"/>
-                                            <action selector="onSlidebarBtnDxRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3QU-Ri-HAO"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASu-nQ-6Iu">
-                                        <rect key="frame" x="240" y="-1" width="64" height="96"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
-                                        <color key="textColor" red="0.22352941179999999" green="0.23137254900000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 curtain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffh-bt-e6D">
-                                        <rect key="frame" x="17" y="33" width="44" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBA-5v-Blh">
-                                        <rect key="frame" x="22" y="69" width="44" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu8-9j-1Gf">
-                                        <rect key="frame" x="100" y="69" width="44" height="21"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Curtain name" clearsOnBeginEditing="YES" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="0J5-xo-fyC">
-                                        <rect key="frame" x="10" y="8" width="211" height="30"/>
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
-                                    </textField>
-                                </subviews>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="parte fissa.png" translatesAutoresizingMaskIntoConstraints="NO" id="Msn-NA-EYe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sfondo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Msn-NA-EYe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2H-wD-Ixt">
-                                <rect key="frame" x="-1" y="91" width="46" height="97"/>
-                                <state key="normal" image="m.png"/>
-                                <state key="selected" image="m.png"/>
-                                <state key="highlighted" image="m:a.png"/>
-                                <state key="focused" image="m:a.png"/>
-                                <connections>
-                                    <action selector="onAutomaticBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="trl-hu-E62"/>
-                                    <action selector="onManualBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0nM-EH-k2q"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5J-29-sMM">
-                                <rect key="frame" x="-1" y="91" width="46" height="97"/>
-                                <state key="normal" image="a.png"/>
-                                <state key="selected" image="m.png"/>
-                                <state key="highlighted" image="m:a.png"/>
-                                <state key="focused" image="m:a.png"/>
-                                <connections>
-                                    <action selector="onAutomaticBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sQ-ul-cX1"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VhO-QN-jVm">
+                                <rect key="frame" x="-2" y="91" width="378" height="578"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fS-c5-bTS">
+                                        <rect key="frame" x="46" y="0.0" width="332" height="96"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rosso.png" translatesAutoresizingMaskIntoConstraints="NO" id="hNs-YQ-J3v">
+                                                <rect key="frame" x="0.0" y="0.0" width="331" height="96"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEc-YR-C06">
+                                                <rect key="frame" x="59" y="36" width="24" height="24"/>
+                                                <state key="normal" image="fcdown.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYx-Xg-6te">
+                                                <rect key="frame" x="134" y="38" width="24" height="20"/>
+                                                <state key="normal" image="down.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSc-aR-36E">
+                                                <rect key="frame" x="274" y="36" width="24" height="24"/>
+                                                <state key="normal" image="fcup.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHg-Pp-y2F">
+                                                <rect key="frame" x="204" y="38" width="24" height="20"/>
+                                                <state key="normal" image="up.png"/>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UM3-vI-QLu">
+                                        <rect key="frame" x="46" y="0.0" width="331" height="96"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="verde.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lpy-32-Pea">
+                                                <rect key="frame" x="-1" y="0.0" width="332" height="96"/>
+                                            </imageView>
+                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kZj-p7-tZj">
+                                                <rect key="frame" x="36" y="33" width="194" height="31"/>
+                                                <color key="tintColor" red="0.32156862745098042" green="0.33725490196078434" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN8-TH-v4S">
+                                                <rect key="frame" x="246" y="0.0" width="60" height="96"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="0.22352941176470589" green="0.23137254901960785" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Avg-Uf-WDJ" userLabel="ClosedSlidebar">
+                                        <rect key="frame" x="46" y="0.0" width="332" height="97"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chiuso.png" translatesAutoresizingMaskIntoConstraints="NO" id="yeM-bc-Gmb">
+                                                <rect key="frame" x="-1" y="0.0" width="334" height="96"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7G-99-eCW" userLabel="Slidebar Btn Sx Green">
+                                                <rect key="frame" x="303" y="0.0" width="28" height="96"/>
+                                                <state key="normal" image="freccia v sx.png"/>
+                                                <state key="selected" image="freccia v dx.png"/>
+                                                <connections>
+                                                    <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="juM-x2-xDJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-pm-ce4" userLabel="Slidebar Btn Dx  Green">
+                                                <rect key="frame" x="304" y="0.0" width="28" height="96"/>
+                                                <state key="normal" image="freccia v dx.png"/>
+                                                <state key="selected" image="freccia v dx.png"/>
+                                                <connections>
+                                                    <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hla-iW-jLd"/>
+                                                    <action selector="onSlidebarBtnDx:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5si-Vn-uap"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5l-Fk-VBv" userLabel="Slidebar Btn Sx Red">
+                                                <rect key="frame" x="303" y="0.0" width="28" height="96"/>
+                                                <state key="normal" image="freccia r sx.png"/>
+                                                <state key="selected" image="freccia r sx.png"/>
+                                                <connections>
+                                                    <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jqe-4e-y6W"/>
+                                                    <action selector="onSlidebarBtnSxRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lri-3X-xx2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmn-JM-7YB">
+                                                <rect key="frame" x="304" y="1" width="28" height="96"/>
+                                                <state key="normal" image="freccia r dx.png"/>
+                                                <state key="selected" image="freccia v dx.png"/>
+                                                <connections>
+                                                    <action selector="onSlidebarBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lB2-Df-gTM"/>
+                                                    <action selector="onSlidebarBtnDx:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYK-2o-ZKC"/>
+                                                    <action selector="onSlidebarBtnDxRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3QU-Ri-HAO"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASu-nQ-6Iu">
+                                                <rect key="frame" x="231" y="-1" width="64" height="96"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                                <color key="textColor" red="0.79607843137254897" green="0.99215686274509807" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 curtain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffh-bt-e6D">
+                                                <rect key="frame" x="17" y="33" width="44" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBA-5v-Blh">
+                                                <rect key="frame" x="22" y="69" width="44" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qu8-9j-1Gf">
+                                                <rect key="frame" x="100" y="69" width="44" height="21"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Curtain name" clearsOnBeginEditing="YES" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="0J5-xo-fyC">
+                                                <rect key="frame" x="10" y="8" width="211" height="30"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwa-ZN-we9">
+                                                <rect key="frame" x="231" y="-1" width="64" height="96"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                                <color key="textColor" red="0.98039215686274506" green="0.14509803921568629" blue="0.32156862745098042" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2H-wD-Ixt">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="97"/>
+                                        <state key="normal" image="mgray.png"/>
+                                        <state key="selected" image="m.png"/>
+                                        <state key="highlighted" image="m:a.png"/>
+                                        <state key="focused" image="m:a.png"/>
+                                        <connections>
+                                            <action selector="onAutomaticBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="trl-hu-E62"/>
+                                            <action selector="onManualBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0nM-EH-k2q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5J-29-sMM">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="97"/>
+                                        <state key="normal" image="agray.png"/>
+                                        <state key="selected" image="m.png"/>
+                                        <state key="highlighted" image="m:a.png"/>
+                                        <state key="focused" image="m:a.png"/>
+                                        <connections>
+                                            <action selector="onAutomaticBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sQ-ul-cX1"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group.png" translatesAutoresizingMaskIntoConstraints="NO" id="cTF-Ur-exH">
+                                        <rect key="frame" x="1" y="95" width="376" height="667"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -173,9 +187,13 @@
                         <outlet property="automaticGreen" destination="UM3-vI-QLu" id="hYe-5m-bbl"/>
                         <outlet property="automaticSlider" destination="kZj-p7-tZj" id="QVd-Vy-TKo"/>
                         <outlet property="closedSlidebar" destination="Avg-Uf-WDJ" id="79b-Fh-cPn"/>
+                        <outlet property="curtainName" destination="0J5-xo-fyC" id="CFd-Yr-Fam"/>
                         <outlet property="greenBar" destination="Lpy-32-Pea" id="vha-AL-C6N"/>
                         <outlet property="manualBtn" destination="X2H-wD-Ixt" id="wcx-sh-wcY"/>
+                        <outlet property="percGr" destination="ASu-nQ-6Iu" id="tKr-hz-3Jh"/>
+                        <outlet property="percRed" destination="wwa-ZN-we9" id="CQ9-ag-7JK"/>
                         <outlet property="redBar" destination="hNs-YQ-J3v" id="myN-iI-ev5"/>
+                        <outlet property="scrollView" destination="VhO-QN-jVm" id="PXF-tH-GDV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -184,7 +202,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="a.png" width="30" height="30"/>
+        <image name="Group.png" width="375" height="667"/>
+        <image name="Sfondo.png" width="374" height="667"/>
+        <image name="agray.png" width="88" height="192"/>
         <image name="chiuso.png" width="334" height="96"/>
         <image name="down.png" width="50" height="40"/>
         <image name="fcdown.png" width="42" height="42"/>
@@ -195,7 +215,7 @@
         <image name="freccia v sx.png" width="9" height="14"/>
         <image name="m.png" width="30" height="30"/>
         <image name="m:a.png" width="30" height="30"/>
-        <image name="parte fissa.png" width="375" height="667"/>
+        <image name="mgray.png" width="88" height="192"/>
         <image name="rosso.png" width="331" height="96"/>
         <image name="up.png" width="50" height="40"/>
         <image name="verde.png" width="332" height="96"/>

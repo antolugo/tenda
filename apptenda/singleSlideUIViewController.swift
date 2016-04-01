@@ -8,7 +8,7 @@
 
 import UIKit
 
-class singleSlideUIViewController: UIViewController {
+class singleSlideUIViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var closedSlidebar: UIView!
     
@@ -28,9 +28,36 @@ class singleSlideUIViewController: UIViewController {
     @IBOutlet weak var SxRed: UIButton!
     @IBOutlet weak var DxRed: UIButton!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var curtainName: UITextField!
+    
+    @IBOutlet weak var percRed: UILabel!
+    @IBOutlet weak var percGr: UILabel!
+    
+    
     
     var manual = false
     var left = false
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.curtainName.delegate = self;
+        
+        scrollView.contentSize = CGSizeMake(378, 768)
+        
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+
     
     func activate(manual:Bool,left:Bool) {
         self.SxGr.alpha = !left ? (!manual ? 100 : 0) : 0
@@ -49,6 +76,9 @@ class singleSlideUIViewController: UIViewController {
             
             self.automaticGreen.alpha = 0
             
+            self.percGr.alpha = 0
+            self.percRed.alpha = 100
+            
             self.manual = true
             self.activate(self.manual,left: self.left)
             
@@ -65,6 +95,9 @@ class singleSlideUIViewController: UIViewController {
             self.manualBtn.alpha = 0
             
             self.automaticGreen.alpha = 100
+            
+            self.percGr.alpha = 100
+            self.percRed.alpha = 0
             
             self.manual = false
             self.activate(self.manual,left: self.left)
