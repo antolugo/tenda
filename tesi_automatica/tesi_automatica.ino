@@ -61,9 +61,9 @@ bool tendaUpA(int s) {
 }
 
 bool tendaUpB(int s) {
-   digitalWrite(13,s); 
-   digitalWrite(11,HIGH); 
-   digitalWrite(12,LOW);
+   digitalWrite(11,s); 
+   digitalWrite(12,HIGH); 
+   digitalWrite(13,LOW);
 }
 
 bool tendaDownA(int s) {
@@ -73,13 +73,13 @@ bool tendaDownA(int s) {
 }
 
 bool tendaDownB(int s) {
-   digitalWrite(13,s); 
-   digitalWrite(11,LOW); 
-   digitalWrite(12,HIGH);
+   digitalWrite(11,s); 
+   digitalWrite(12,LOW); 
+   digitalWrite(13,HIGH);
 }
 
 void stopAll() {
-  digitalWrite(13,0); 
+  digitalWrite(11,0); 
   digitalWrite(6,0); 
 }
 
