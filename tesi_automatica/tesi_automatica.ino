@@ -16,8 +16,6 @@ char auth[] = "3b8dfe66343d4a02a41809810fac010d";
 
 int fotoInt=A0;
 int fotoEst=A1;
-int luceInt=0;
-int luceEst=0;
 int luceTarget=0;
 bool started=false;
 int lastMillis = 0;
@@ -111,22 +109,22 @@ bool speed(int luce, int target) {
 }
 
 void logic() {
-  luceInt=analogRead(fotoInt);
-  luceEst=analogRead(fotoEst);
+  int luceInt=analogRead(fotoInt);
+  int luceEst=analogRead(fotoEst);
   int fineCorsaU = digitalRead(2);
   int fineCorsaD = digitalRead(3);
-  
   if (started && moving(luceInt, luceTarget)) {
-   if (directionUp(luceInt, luceTarget)){
+   if (directionUp(luceInt, luceTarget) && !fineCorsaUp()){
       tendaUpA(speed(luceInt, luceTarget));
       tendaUpB(speed(luceInt, luceTarget));
-    } else {
+    } else if (!fineCorsaDown()){
       tendaDownA(speed(luceInt, luceTarget));
       tendaDownB(speed(luceInt, luceTarget));
     } 
-  } else (stopAll()) {
-    
+  } else {
+    stopAll();
   }
+
 
   BLYNK_LOG("Luce interna: %d",luceInt);
   BLYNK_LOG("Luce esterna: %d",luceEst);
