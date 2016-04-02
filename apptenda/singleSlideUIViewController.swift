@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class singleSlideUIViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var closedSlidebar: UIView!
@@ -34,6 +35,7 @@ class singleSlideUIViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var percRed: UILabel!
     @IBOutlet weak var percGr: UILabel!
+    
     
     
     var manual = false

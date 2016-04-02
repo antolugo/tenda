@@ -20,6 +20,7 @@ int luceInt=0;
 int luceEst=0;
 int luceTarget=0;
 bool started=false;
+int lastMillis = 0;
 
 void setup() {
   // Set console baud rate
@@ -86,7 +87,6 @@ void stopAll() {
 
 void loop() {
   Blynk.run();
-  lastMillis = millis()
   if (500 < (millis()-lastMillis)) {
     lastMillis = millis();
     logic();
