@@ -1,10 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Eo4-6k-fNm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <scenes>
+        <!--Generic SlideUI View Controller-->
+        <scene sceneID="vHd-Ap-pHg">
+            <objects>
+                <viewController id="53P-Np-ACA" customClass="GenericSlideUIViewController" customModule="tenda" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wyf-P3-VrT"/>
+                        <viewControllerLayoutGuide type="bottom" id="SkZ-C8-Icl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="33W-5M-Id2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kV2-Xk-47N">
+                                <rect key="frame" x="309" y="28" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="SlidePage:" destination="53P-Np-ACA" eventType="touchUpInside" id="uqd-xt-9x2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Kjp-kM-pVQ"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRK-xb-OKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376.5" y="-223.5"/>
+        </scene>
         <!--Single SlideUI View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -69,7 +100,7 @@
                                         <rect key="frame" x="46" y="0.0" width="332" height="97"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chiuso.png" translatesAutoresizingMaskIntoConstraints="NO" id="yeM-bc-Gmb">
-                                                <rect key="frame" x="-1" y="0.0" width="334" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="96"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7G-99-eCW" userLabel="Slidebar Btn Sx Green">
                                                 <rect key="frame" x="303" y="0.0" width="28" height="96"/>
@@ -172,9 +203,28 @@
                                     </imageView>
                                 </subviews>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWz-6T-HAo">
+                                <rect key="frame" x="0.0" y="38" width="39" height="53"/>
+                                <connections>
+                                    <segue destination="53P-Np-ACA" kind="push" id="LCn-NO-43x">
+                                        <segue key="commit" inheritsFrom="parent" id="cTe-yG-mPh"/>
+                                        <segue key="preview" inheritsFrom="commit" id="IyH-dr-Edx"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-iZ-AAo">
+                                <rect key="frame" x="337" y="38" width="33" height="53"/>
+                                <connections>
+                                    <segue destination="sUJ-Xg-v8r" kind="show" id="bQC-cE-RK1">
+                                        <segue key="commit" inheritsFrom="parent" id="qxy-8a-rqI"/>
+                                        <segue key="preview" inheritsFrom="commit" id="mWQ-iL-6a3"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Uh6-9y-yGf"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -198,7 +248,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564.5" y="511.5"/>
+            <point key="canvasLocation" x="1376.5" y="511.5"/>
+        </scene>
+        <!--SettingsUI View Controller-->
+        <scene sceneID="v0Q-pw-WlT">
+            <objects>
+                <viewController id="sUJ-Xg-v8r" customClass="SettingsUIViewController" customModule="tenda" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WEK-Xc-hhN"/>
+                        <viewControllerLayoutGuide type="bottom" id="OpR-DZ-g6x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jil-Kb-ucQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hr-bx-aTz">
+                                <rect key="frame" x="20" y="20" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="sUJ-Xg-v8r" eventType="touchUpInside" id="WyP-Zv-7xq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3d-Kr-nWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1867.5" y="511.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nDh-hp-pKS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Eo4-6k-fNm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="42C-Xb-7NM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8tp-6L-OpN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muT-AY-Yhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857.5" y="511.5"/>
         </scene>
     </scenes>
     <resources>
@@ -220,4 +319,8 @@
         <image name="up.png" width="50" height="40"/>
         <image name="verde.png" width="332" height="96"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bQC-cE-RK1"/>
+        <segue reference="LCn-NO-43x"/>
+    </inferredMetricsTieBreakers>
 </document>

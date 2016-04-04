@@ -35,6 +35,8 @@
 		EA4A15A31CADAFA1006ABFA5 /* fcup.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4A159F1CADAFA1006ABFA5 /* fcup.png */; };
 		EA4A15A41CADAFA1006ABFA5 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4A15A01CADAFA1006ABFA5 /* up.png */; };
 		EA4A15A51CADAFA1006ABFA5 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = EA4A15A11CADAFA1006ABFA5 /* down.png */; };
+		EA73EFD41CB2DBAD0051842C /* SettingsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73EFD31CB2DBAD0051842C /* SettingsUIViewController.swift */; };
+		EA73EFD61CB2DD320051842C /* GenericSlideUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73EFD51CB2DD320051842C /* GenericSlideUIViewController.swift */; };
 		EA97319F1CAE8F920014BB3B /* mgray.png in Resources */ = {isa = PBXBuildFile; fileRef = EA97319D1CAE8F920014BB3B /* mgray.png */; };
 		EA9731A01CAE8F920014BB3B /* agray.png in Resources */ = {isa = PBXBuildFile; fileRef = EA97319E1CAE8F920014BB3B /* agray.png */; };
 		EA9731A21CAE92C50014BB3B /* Sfondo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9731A11CAE92C50014BB3B /* Sfondo@2x.png */; };
@@ -92,6 +94,8 @@
 		EA4A159F1CADAFA1006ABFA5 /* fcup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fcup.png; sourceTree = "<group>"; };
 		EA4A15A01CADAFA1006ABFA5 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
 		EA4A15A11CADAFA1006ABFA5 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		EA73EFD31CB2DBAD0051842C /* SettingsUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsUIViewController.swift; sourceTree = "<group>"; };
+		EA73EFD51CB2DD320051842C /* GenericSlideUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericSlideUIViewController.swift; sourceTree = "<group>"; };
 		EA97319D1CAE8F920014BB3B /* mgray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mgray.png; sourceTree = "<group>"; };
 		EA97319E1CAE8F920014BB3B /* agray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agray.png; sourceTree = "<group>"; };
 		EA9731A11CAE92C50014BB3B /* Sfondo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sfondo@2x.png"; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				EA33DB571CAD0749004B7408 /* AppDelegate.swift */,
 				EA33DB591CAD0749004B7408 /* ViewController.swift */,
 				EA33DB5B1CAD0749004B7408 /* Main.storyboard */,
+				EA73EFD51CB2DD320051842C /* GenericSlideUIViewController.swift */,
+				EA73EFD31CB2DBAD0051842C /* SettingsUIViewController.swift */,
 				EA4A15981CAD16E0006ABFA5 /* singleSlideUIViewController.swift */,
 				EA33DB5E1CAD0749004B7408 /* Assets.xcassets */,
 				EA33DB601CAD0749004B7408 /* LaunchScreen.storyboard */,
@@ -362,9 +368,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA73EFD61CB2DD320051842C /* GenericSlideUIViewController.swift in Sources */,
 				EA4A15991CAD16E0006ABFA5 /* singleSlideUIViewController.swift in Sources */,
 				EA33DB5A1CAD0749004B7408 /* ViewController.swift in Sources */,
 				EA33DB581CAD0749004B7408 /* AppDelegate.swift in Sources */,
+				EA73EFD41CB2DBAD0051842C /* SettingsUIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
