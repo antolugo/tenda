@@ -15,8 +15,6 @@
 		EA067A421C9EB65E00CD426B /* tesiswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067A411C9EB65E00CD426B /* tesiswiftTests.swift */; };
 		EA067A4D1C9EB65E00CD426B /* tesiswiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067A4C1C9EB65E00CD426B /* tesiswiftUITests.swift */; };
 		EA067A5F1C9F0B5800CD426B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA067A5E1C9F0B5800CD426B /* Alamofire.framework */; };
-		EA067A601C9F0C6800CD426B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA067A5E1C9F0B5800CD426B /* Alamofire.framework */; };
-		EA067A611C9F0C6800CD426B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA067A5E1C9F0B5800CD426B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA067A641C9F1D4500CD426B /* BlynkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067A631C9F1D4500CD426B /* BlynkClient.swift */; };
 		EA067A661C9F290B00CD426B /* PeriodicReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA067A651C9F290B00CD426B /* PeriodicReader.swift */; };
 		EA3DFDC81CAB1A5500B5BBA8 /* top passivo.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3DFDC71CAB1A5500B5BBA8 /* top passivo.png */; };
@@ -60,6 +58,7 @@
 		EA5957CE1CAAFE2F00BAFEA3 /* matransition.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957CB1CAAFE2F00BAFEA3 /* matransition.png */; };
 		EA5957CF1CAAFE2F00BAFEA3 /* m.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957CC1CAAFE2F00BAFEA3 /* m.png */; };
 		EA5957D01CAAFE2F00BAFEA3 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = EA5957CD1CAAFE2F00BAFEA3 /* A.png */; };
+		EF2E70411CB2F3E9005C56FB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF2E70401CB2F3E9005C56FB /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +85,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EA067A611C9F0C6800CD426B /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +105,7 @@
 		EA067A481C9EB65E00CD426B /* tesiswiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tesiswiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA067A4C1C9EB65E00CD426B /* tesiswiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tesiswiftUITests.swift; sourceTree = "<group>"; };
 		EA067A4E1C9EB65E00CD426B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA067A5E1C9F0B5800CD426B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		EA067A5E1C9F0B5800CD426B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = /Users/dcorapi/Dev/projects/tenda/tesiswift/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<absolute>"; };
 		EA067A631C9F1D4500CD426B /* BlynkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlynkClient.swift; sourceTree = "<group>"; };
 		EA067A651C9F290B00CD426B /* PeriodicReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicReader.swift; sourceTree = "<group>"; };
 		EA3DFDC71CAB1A5500B5BBA8 /* top passivo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top passivo.png"; sourceTree = "<group>"; };
@@ -151,6 +149,7 @@
 		EA5957CB1CAAFE2F00BAFEA3 /* matransition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matransition.png; sourceTree = "<group>"; };
 		EA5957CC1CAAFE2F00BAFEA3 /* m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m.png; sourceTree = "<group>"; };
 		EA5957CD1CAAFE2F00BAFEA3 /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
+		EF2E70401CB2F3E9005C56FB /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA067A5F1C9F0B5800CD426B /* Alamofire.framework in Frameworks */,
-				EA067A601C9F0C6800CD426B /* Alamofire.framework in Frameworks */,
+				EF2E70411CB2F3E9005C56FB /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +186,7 @@
 				EA067A401C9EB65E00CD426B /* tesiswiftTests */,
 				EA067A4B1C9EB65E00CD426B /* tesiswiftUITests */,
 				EA067A2A1C9EB65E00CD426B /* Products */,
-				EA067A5E1C9F0B5800CD426B /* Alamofire.framework */,
+				EF2E70401CB2F3E9005C56FB /* Alamofire.framework */,
 			);
 			sourceTree = "<group>";
 		};
