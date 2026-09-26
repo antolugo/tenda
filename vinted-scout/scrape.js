@@ -19,7 +19,11 @@ function proxySpki() {
   const p = await b.newPage({ locale: 'it-IT', userAgent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36' });
   const qs = fs.readFileSync(qFile, 'utf8').split('\n').map(s => s.trim()).filter(Boolean);
   const out = fs.createWriteStream(outFile);
+  p.setDefaultTimeout(25000);
   let fresh = 0;
+  const save = () => fs.writeFileSync(seenFile, JSON.stringify([...seen]));
+  // Watchdog: un giro non deve mai superare 40 minuti (evita di accavallarsi col successivo).
+  setTimeout(() => { console.error('watchdog: stop'); save(); out.end(); process.exit(0); }, 40 * 60 * 1000).unref();
   for (const q of qs) {
     try {
       await p.goto('https://www.vinted.it/catalog?order=newest_first&price_to=' + maxPrice + '&search_text=' + encodeURIComponent(q), { waitUntil: 'domcontentloaded' });
@@ -37,10 +41,11 @@ function proxySpki() {
         const m = it.t.match(/([\d.]+) €/);
         out.write(JSON.stringify({ q, id, price: m ? m[1] : '?', ...it }) + '\n');
       }
-    } catch (e) { console.error(q, 'ERR', e.message); }
+    } catch (e) { console.error(q, 'ERR', e.message.split('\n')[0]); }
+    save();
   }
   out.end();
-  fs.writeFileSync(seenFile, JSON.stringify([...seen]));
+  save();
   console.log('nuovi annunci:', fresh);
   await b.close();
 })();
