@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1200" width="1200" height="1200">
+  <title>Joker Skull – restyling con cappello ad ancorotto</title>
+  <defs>
+    <!-- Amo singolo dell'ancorotto: gambo, curva e punta con ardiglione -->
+    <g id="amo">
+      <path d="M0 0 L0 70 C0 125 70 125 70 70 L70 40" fill="none" stroke="#000" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M70 34 L92 72 L70 62 Z" fill="#000" stroke="#000" stroke-width="14" stroke-linejoin="round"/>
+      <path d="M0 0 L0 70 C0 125 70 125 70 70 L70 40" fill="none" stroke="#c8ccd2" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M70 34 L88 66 L70 58 Z" fill="#c8ccd2"/>
+      <path d="M-3 20 L-3 70 C-3 100 20 110 40 104" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+    </g>
+    <!-- Lacrima / goccia di gioia: punta in basso da dritto, punta in alto se capovolto -->
+    <path id="goccia" d="M0 -26 C16 -26 22 -10 22 0 C22 14 8 30 0 44 C-8 30 -22 14 -22 0 C-22 -10 -16 -26 0 -26 Z"/>
+  </defs>
+
+  <!-- Sfondo -->
+  <rect width="1200" height="1200" fill="#000"/>
+  <circle cx="600" cy="600" r="590" fill="#000" stroke="#111" stroke-width="4"/>
+
+  <!-- Scudo -->
+  <path d="M150 250 C330 240 470 205 600 175 C730 205 870 240 1050 250 L1050 720 C1050 900 860 1040 600 1110 C340 1040 150 900 150 720 Z" fill="#fff" stroke="#000" stroke-width="14"/>
+  <path d="M185 282 C350 272 480 240 600 212 C720 240 850 272 1015 282 L1015 718 C1015 880 840 1005 600 1072 C360 1005 185 880 185 718 Z" fill="none" stroke="#000" stroke-width="6"/>
+
+  <!-- Fucili subacquei incrociati (sopra lo scudo, dietro il teschio) -->
+  <g stroke="#000" stroke-width="10" stroke-linejoin="round">
+    <g fill="#6b3fc4">
+      <rect x="-14" y="-460" width="28" height="900" rx="10" transform="translate(600 640) rotate(-45)"/>
+      <rect x="-14" y="-460" width="28" height="900" rx="10" transform="translate(600 640) rotate(45)"/>
+    </g>
+  </g>
+
+  <!-- Impugnature dei fucili (davanti allo scudo) -->
+  <g stroke="#000" stroke-width="10" stroke-linejoin="round" fill="#6b3fc4">
+    <g transform="translate(275 965) rotate(45)">
+      <rect x="-26" y="-110" width="52" height="150" rx="14"/>
+      <path d="M-26 -20 L-70 40 L-50 70 L-10 20 Z"/>
+      <circle cx="0" cy="-60" r="10" fill="#fff"/>
+    </g>
+    <g transform="translate(925 965) rotate(-45)">
+      <rect x="-26" y="-110" width="52" height="150" rx="14"/>
+      <path d="M26 -20 L70 40 L50 70 L10 20 Z"/>
+      <circle cx="0" cy="-60" r="10" fill="#fff"/>
+    </g>
+  </g>
+
+  <!-- Capelli verdi ai lati -->
+  <g fill="#5bc236" stroke="#000" stroke-width="12" stroke-linejoin="round">
+    <path d="M395 440 C300 450 250 520 215 560 C260 555 280 560 300 570 C240 610 215 670 210 720 C250 700 275 700 300 705 C255 760 250 820 265 870 C290 830 320 815 345 815 C340 760 350 700 380 640 C390 580 395 500 395 440 Z"/>
+    <path d="M805 440 C900 450 950 520 985 560 C940 555 920 560 900 570 C960 610 985 670 990 720 C950 700 925 700 900 705 C945 760 950 820 935 870 C910 830 880 815 855 815 C860 760 850 700 820 640 C810 580 805 500 805 440 Z"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="6" stroke-linecap="round">
+    <path d="M330 520 C300 560 290 600 300 640"/>
+    <path d="M300 700 C285 740 285 780 300 810"/>
+    <path d="M870 520 C900 560 910 600 900 640"/>
+    <path d="M900 700 C915 740 915 780 900 810"/>
+  </g>
+
+  <!-- Teschio: cranio + zigomi + mandibola -->
+  <path d="M600 400 C760 400 840 500 840 640 C840 720 815 760 790 790 C800 830 790 870 760 900 L740 960 C700 1010 650 1030 600 1030 C550 1030 500 1010 460 960 L440 900 C410 870 400 830 410 790 C385 760 360 720 360 640 C360 500 440 400 600 400 Z" fill="#fff" stroke="#000" stroke-width="14" stroke-linejoin="round"/>
+
+  <!-- Linee della fronte -->
+  <path d="M500 500 C540 485 660 485 700 500" fill="none" stroke="#000" stroke-width="10" stroke-linecap="round"/>
+
+  <!--
+    OCCHI AMBIGUI
+    Dritto: archi a "∩" (occhi strizzati dalle risate) con gocce di gioia che schizzano verso l'alto.
+    Capovolto: gli archi diventano "∪" (occhi chiusi tristi) e le gocce cadono sotto gli occhi come lacrime.
+  -->
+  <g fill="#000" stroke="#000" stroke-width="6" stroke-linejoin="round">
+    <path d="M405 665 C430 560 560 545 590 660 C560 615 440 615 405 665 Z"/>
+    <path d="M795 665 C770 560 640 545 610 660 C640 615 760 615 795 665 Z"/>
+  </g>
+  <!-- Orbite: ombra sottile sotto gli archi per dare profondità come nell'originale -->
+  <g fill="none" stroke="#000" stroke-width="7" stroke-linecap="round">
+    <path d="M420 690 C460 665 540 665 575 690"/>
+    <path d="M780 690 C740 665 660 665 625 690"/>
+  </g>
+  <!-- Gocce: sopra gli occhi da dritto (gioia), sotto gli occhi da capovolto (pianto) -->
+  <g fill="#8fd3ff" stroke="#000" stroke-width="7" stroke-linejoin="round">
+    <use xlink:href="#goccia" transform="translate(395 560) rotate(25) scale(1.1)"/>
+    <use xlink:href="#goccia" transform="translate(805 560) rotate(-25) scale(1.1)"/>
+    <use xlink:href="#goccia" transform="translate(455 520) rotate(10) scale(.7)"/>
+    <use xlink:href="#goccia" transform="translate(745 520) rotate(-10) scale(.7)"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="392" cy="575" r="5"/>
+    <circle cx="808" cy="575" r="5"/>
+  </g>
+
+  <!-- Naso a cuore rovesciato -->
+  <path d="M600 790 C585 760 545 740 560 715 C572 698 592 705 600 722 C608 705 628 698 640 715 C655 740 615 760 600 790 Z" fill="#000" stroke="#000" stroke-width="4"/>
+
+  <!-- Zigomi -->
+  <g fill="none" stroke="#000" stroke-width="9" stroke-linecap="round">
+    <path d="M420 760 C450 790 470 810 470 840"/>
+    <path d="M780 760 C750 790 730 810 730 840"/>
+  </g>
+
+  <!-- Sorriso del Joker: da dritto ghigno, da capovolto bocca triste -->
+  <path d="M410 815 C470 900 730 900 790 815 C770 880 690 935 600 935 C510 935 430 880 410 815 Z" fill="#000"/>
+  <!-- Denti superiori -->
+  <g fill="#fff" stroke="#000" stroke-width="5">
+    <path d="M455 858 C520 892 680 892 745 858 L740 885 C680 905 520 905 460 885 Z"/>
+  </g>
+  <g stroke="#000" stroke-width="5">
+    <line x1="490" y1="870" x2="492" y2="897"/>
+    <line x1="525" y1="878" x2="526" y2="902"/>
+    <line x1="562" y1="882" x2="562" y2="905"/>
+    <line x1="600" y1="883" x2="600" y2="906"/>
+    <line x1="638" y1="882" x2="638" y2="905"/>
+    <line x1="675" y1="878" x2="674" y2="902"/>
+    <line x1="710" y1="870" x2="708" y2="897"/>
+  </g>
+  <!-- Denti inferiori -->
+  <path d="M480 905 C540 925 660 925 720 905 C700 930 660 945 600 945 C540 945 500 930 480 905 Z" fill="#fff" stroke="#000" stroke-width="5"/>
+  <g stroke="#000" stroke-width="5">
+    <line x1="525" y1="915" x2="527" y2="938"/>
+    <line x1="562" y1="919" x2="562" y2="943"/>
+    <line x1="600" y1="920" x2="600" y2="945"/>
+    <line x1="638" y1="919" x2="638" y2="943"/>
+    <line x1="675" y1="915" x2="673" y2="938"/>
+  </g>
+  <!-- Labbra rosse -->
+  <g fill="none" stroke="#d6262b" stroke-width="12" stroke-linecap="round">
+    <path d="M395 800 C460 895 740 895 805 800"/>
+    <path d="M440 900 C520 965 680 965 760 900"/>
+  </g>
+
+  <!-- Amo tra i denti (come nell'originale) -->
+  <g transform="translate(668 930) rotate(-20) scale(.45)">
+    <use xlink:href="#amo"/>
+  </g>
+
+  <!--
+    CAPPELLO A 3 PUNTE = ANCOROTTO
+    Al centro della fascia c'è l'occhiello dell'ancorotto, da cui parte il gambo.
+    Le tre punte del cappello sono i tre bracci: ognuna termina con un amo con ardiglione.
+  -->
+  <g stroke="#000" stroke-width="14" stroke-linejoin="round">
+    <!-- Punta sinistra (viola) -->
+    <path d="M410 455 C330 380 260 250 140 255 C85 258 75 320 115 372 C150 340 205 365 250 405 C310 450 380 480 470 470 Z" fill="#6b3fc4"/>
+    <!-- Punta destra (viola) -->
+    <path d="M790 455 C870 380 940 250 1060 255 C1115 258 1125 320 1085 372 C1050 340 995 365 950 405 C890 450 820 480 730 470 Z" fill="#6b3fc4"/>
+    <!-- Punta centrale (verde) -->
+    <path d="M440 455 C450 330 520 210 600 140 C680 210 750 330 760 455 Z" fill="#5bc236"/>
+    <!-- Gambo dell'ancorotto lungo la punta centrale -->
+    <path d="M600 160 L600 410" fill="none" stroke="#000" stroke-width="22" stroke-linecap="round"/>
+    <path d="M600 160 L600 410" fill="none" stroke="#c8ccd2" stroke-width="9" stroke-linecap="round"/>
+    <!-- Pieghe del cappello -->
+    <path d="M520 450 C525 360 555 270 585 210" fill="none" stroke-width="7" stroke-linecap="round"/>
+    <path d="M680 450 C675 360 645 270 615 210" fill="none" stroke-width="7" stroke-linecap="round"/>
+    <path d="M340 410 C290 340 220 290 150 290" fill="none" stroke-width="6" stroke-linecap="round"/>
+    <path d="M860 410 C910 340 980 290 1050 290" fill="none" stroke-width="6" stroke-linecap="round"/>
+    <!-- Fascia -->
+    <path d="M375 440 C450 410 750 410 825 440 L815 500 C740 472 460 472 385 500 Z" fill="#6b3fc4"/>
+    <!-- Rombi sulla fascia -->
+    <g fill="#5bc236" stroke-width="5">
+      <path d="M455 445 L470 432 L485 445 L470 470 Z"/>
+      <path d="M715 445 L730 432 L745 445 L730 470 Z"/>
+    </g>
+  </g>
+
+  <!-- Occhiello dell'ancorotto al centro della fascia -->
+  <circle cx="600" cy="452" r="34" fill="none" stroke="#000" stroke-width="30"/>
+  <circle cx="600" cy="452" r="34" fill="none" stroke="#c8ccd2" stroke-width="14"/>
+  <path d="M582 430 A28 28 0 0 1 622 432" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- I tre ami dell'ancorotto sulle punte -->
+  <g transform="translate(112 362) rotate(8)"><use xlink:href="#amo"/></g>
+  <g transform="translate(1088 362) rotate(-8) scale(-1 1)"><use xlink:href="#amo"/></g>
+  <g transform="translate(600 158) rotate(180) scale(.95)"><use xlink:href="#amo"/></g>
+
+  <!-- Piranha sul cappello (dall'originale) -->
+  <g transform="translate(600 300)" stroke="#000" stroke-linejoin="round">
+    <path d="M-48 0 C-30 -32 20 -34 40 -6 L62 -26 L58 0 L62 26 L40 6 C20 34 -30 32 -48 0 Z" fill="#fff" stroke-width="6"/>
+    <path d="M-48 0 L-20 0" stroke-width="4"/>
+    <path d="M-44 -6 L-38 2 L-32 -6 L-26 2" fill="none" stroke-width="3"/>
+    <circle cx="-22" cy="-12" r="5" fill="#000"/>
+    <path d="M0 -26 L8 -40 L14 -24" fill="#fff" stroke-width="4"/>
+  </g>
+</svg>
