@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1206 1179" width="1206" height="1179">
+  <title>Joker Skull – restyling v2</title>
+  <!--
+    Base: il logo originale (logo-originale.jpg), così stile e dettagli di capelli,
+    scudo, fucili, denti e amo restano identici. Sopra vengono ridisegnati
+    gli occhi ambigui (ride/piange) e il cappello a 3 punte ad ancorotto.
+  -->
+  <defs>
+    <clipPath id="medaglione"><circle cx="603" cy="262" r="54"/></clipPath>
+
+    <!-- Amo dell'ancorotto: gambo, curva, punta con ardiglione, anellino di giunzione -->
+    <g id="amo">
+      <circle cx="0" cy="-8" r="15" fill="none" stroke="#000" stroke-width="18"/>
+      <circle cx="0" cy="-8" r="15" fill="none" stroke="#c9ccd3" stroke-width="7"/>
+      <path d="M0 8 L0 78 C0 140 78 140 78 78 L78 46" fill="none" stroke="#000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M78 36 L104 82 L74 70 Z" fill="#000" stroke="#000" stroke-width="16" stroke-linejoin="round"/>
+      <path d="M0 8 L0 78 C0 140 78 140 78 78 L78 46" fill="none" stroke="#c9ccd3" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M78 38 L99 76 L76 66 Z" fill="#c9ccd3"/>
+      <path d="M-4 22 L-4 78 C-4 108 18 122 44 116" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+      <path d="M5 30 L5 60" stroke="#7d818a" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Goccia: punta in basso da dritto (gioia), punta in alto da capovolto (lacrima che cade) -->
+    <g id="goccia">
+      <path d="M0 -24 C15 -24 21 -9 21 1 C21 15 8 30 0 46 C-8 30 -21 15 -21 1 C-21 -9 -15 -24 0 -24 Z" fill="#8fd3ff" stroke="#000" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M-9 -6 C-9 -13 -4 -17 2 -17" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <!--
+      Occhio sinistro "ambiguo": mezzaluna a ∩ con le punte affilate come le orbite originali.
+      Dritto = occhio strizzato dalle risate. Capovolto = ∪, occhio chiuso che piange.
+    -->
+    <g id="occhio">
+      <!-- orbita a mezzaluna, grande e piena come le orbite originali -->
+      <path d="M382 744 C370 628 420 545 498 539 C574 534 610 602 597 710 C580 664 540 644 492 646 C440 648 404 682 382 744 Z" fill="#000"/>
+      <!-- palpebra: filo bianco a pennellata dentro l'orbita -->
+      <path d="M418 640 C450 598 530 590 568 624 C530 604 456 610 418 640 Z" fill="#fff"/>
+      <path d="M398 700 C404 684 412 672 424 662 C418 678 410 690 398 700 Z" fill="#fff"/>
+      <!-- ponte nasale e ricciolo verso il naso, come nell'originale -->
+      <path d="M556 716 C548 700 552 686 566 684 C560 692 558 702 562 714 Z" fill="#000"/>
+      <!-- gocce: gioia da dritto, lacrime da capovolto -->
+      <use xlink:href="#goccia" transform="translate(526 508) rotate(-8) scale(.95)"/>
+      <use xlink:href="#goccia" transform="translate(470 500) rotate(-20) scale(.6)"/>
+    </g>
+  </defs>
+
+  <!-- Logo originale con le orbite e il sopracciglio centrale rimossi -->
+  <image xlink:href="logo-base-senza-occhi.png" x="0" y="0" width="1206" height="1179"/>
+
+  <!-- Occhi nuovi (sinistro + specchiato) -->
+  <use xlink:href="#occhio"/>
+  <use xlink:href="#occhio" transform="translate(1206 0) scale(-1 1)"/>
+
+  <!-- ===================== CAPPELLO AD ANCOROTTO ===================== -->
+  <g stroke="#000" stroke-width="12" stroke-linejoin="round">
+    <!-- Punta sinistra (viola) -->
+    <path d="M505 372 C430 300 330 165 205 150 C140 142 112 196 140 262 C165 232 205 232 240 258 C292 296 322 362 356 428 Z" fill="#543793"/>
+    <!-- Punta destra (viola) -->
+    <path d="M701 372 C776 300 876 165 1001 150 C1066 142 1094 196 1066 262 C1041 232 1001 232 966 258 C914 296 884 362 850 428 Z" fill="#543793"/>
+    <!-- Punta centrale (verde), con la cima ricurva da giullare -->
+    <path d="M462 392 C450 250 516 118 610 72 C682 38 768 62 778 128 C746 104 704 112 688 146 C664 204 730 290 744 392 Z" fill="#64b443"/>
+  </g>
+
+  <!-- Ombre e pieghe a pennellata, come le ciocche dei capelli originali -->
+  <g fill="#000">
+    <path d="M440 352 C390 290 330 222 262 190 C340 210 404 276 452 336 Z"/>
+    <path d="M392 380 C350 330 300 280 236 232 C312 268 366 320 404 366 Z"/>
+    <path d="M766 352 C816 290 876 222 944 190 C866 210 802 276 754 336 Z"/>
+    <path d="M814 380 C856 330 906 280 970 232 C894 268 840 320 802 366 Z"/>
+    <path d="M512 380 C506 300 530 210 584 140 C548 214 528 296 528 378 Z"/>
+    <path d="M700 380 C690 300 676 230 660 178 C686 236 704 304 714 378 Z"/>
+    <path d="M616 96 C660 72 718 74 748 98 C712 86 662 86 616 96 Z"/>
+    <path d="M300 300 C260 262 214 236 168 228 C220 226 270 252 312 288 Z"/>
+    <path d="M906 300 C946 262 992 236 1038 228 C986 226 936 252 894 288 Z"/>
+    <path d="M560 380 C552 300 566 230 600 180 C580 240 570 310 574 378 Z"/>
+    <path d="M646 380 C652 320 650 250 636 196 C660 250 666 320 660 378 Z"/>
+  </g>
+  <!-- Luci -->
+  <g fill="#7b5bc0">
+    <path d="M232 168 C300 176 366 230 420 300 C356 246 296 196 232 168 Z"/>
+    <path d="M974 168 C906 176 840 230 786 300 C850 246 910 196 974 168 Z"/>
+  </g>
+  <path d="M560 130 C590 100 630 82 670 78 C630 92 596 110 560 130 Z" fill="#8fd16f"/>
+
+  <!-- Gambo dell'ancorotto lungo la punta centrale -->
+  <path d="M603 408 L603 150" stroke="#000" stroke-width="26" stroke-linecap="round"/>
+  <path d="M603 408 L603 150" stroke="#c9ccd3" stroke-width="11" stroke-linecap="round"/>
+  <path d="M599 390 L599 170" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Medaglione con il piranha originale -->
+  <circle cx="603" cy="262" r="62" fill="#fff" stroke="#000" stroke-width="12"/>
+  <g clip-path="url(#medaglione)">
+    <svg x="543" y="198" width="124" height="128" viewBox="358 308 124 150" preserveAspectRatio="xMidYMid meet">
+      <image xlink:href="logo-originale.jpg" x="0" y="0" width="1206" height="1179"/>
+    </svg>
+  </g>
+  <circle cx="603" cy="262" r="54" fill="none" stroke="#000" stroke-width="4"/>
+
+  <!-- Fascia -->
+  <path d="M348 474 Q603 396 858 474 L850 404 Q603 330 356 404 Z" fill="#543793" stroke="#000" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M366 452 Q603 380 840 452" fill="none" stroke="#000" stroke-width="4"/>
+  <path d="M368 420 Q603 350 838 420" fill="none" stroke="#7b5bc0" stroke-width="5"/>
+  <!-- Rombi verdi sulla fascia -->
+  <g fill="#64b443" stroke="#000" stroke-width="5" stroke-linejoin="round">
+    <path d="M410 422 L424 404 L438 420 L424 446 Z"/>
+    <path d="M478 404 L492 386 L506 402 L492 428 Z"/>
+    <path d="M700 402 L714 386 L728 404 L714 428 Z"/>
+    <path d="M768 420 L782 404 L796 422 L782 446 Z"/>
+  </g>
+
+  <!-- Occhiello dell'ancorotto al centro della fascia -->
+  <circle cx="603" cy="420" r="32" fill="none" stroke="#000" stroke-width="30"/>
+  <circle cx="603" cy="420" r="32" fill="none" stroke="#c9ccd3" stroke-width="14"/>
+  <path d="M585 398 A28 28 0 0 1 626 402" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- I tre ami dell'ancorotto -->
+  <g transform="translate(140 270) rotate(6)"><use xlink:href="#amo"/></g>
+  <g transform="translate(1066 270) rotate(-6) scale(-1 1)"><use xlink:href="#amo"/></g>
+  <g transform="translate(776 138) rotate(-4)"><use xlink:href="#amo"/></g>
+</svg>
