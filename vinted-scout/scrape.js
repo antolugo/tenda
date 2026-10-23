@@ -28,7 +28,7 @@ function proxySpki() {
   for (const q0 of qs) for (let pg = 1; pg <= pages; pg++) {
     const q = q0;
     try {
-      await p.goto('https://www.vinted.it/catalog?order=newest_first&price_to=' + maxPrice + '&page=' + pg + '&search_text=' + encodeURIComponent(q), { waitUntil: 'domcontentloaded' });
+      await p.goto('https://www.vinted.' + (process.env.DOMAIN || 'it') + '/catalog?order=newest_first&price_to=' + maxPrice + '&page=' + pg + '&search_text=' + encodeURIComponent(q), { waitUntil: 'domcontentloaded' });
       await p.waitForTimeout(5000);
       await p.mouse.wheel(0, 3000); await p.waitForTimeout(1500);
       const items = await p.$$eval('a[href*="referrer=catalog"]', as => as.map(a => {
